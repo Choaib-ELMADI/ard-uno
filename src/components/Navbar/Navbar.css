@@ -1,0 +1,100 @@
+.app__navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: .75rem 2rem;
+}
+
+.app__navbar-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.app__logo {
+    text-decoration: none;
+    font-size: var(--page__headers);
+    font-weight: 600;
+    color: var(--black);
+    text-transform: capitalize;
+}
+
+.app__logo::first-letter {
+    color: var(--our__color);
+}
+
+.app__navbar-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.75rem;
+    list-style: none;
+}
+
+.app__navbar-main li {
+    transition: .3s;
+}
+
+.app__navbar-main li a {
+    text-decoration: none;
+    color: var(--black);
+    font-size: var(--group__headers);
+    transition: .1s;
+}
+
+.app__navbar-main:hover li {
+    opacity: .6;
+}
+
+.app__navbar-main li:hover a {
+    color: var(--our__color);
+}
+
+.app__navbar-btn {
+    border: 0;
+    outline: none;
+    text-transform: uppercase;
+    background: var(--our__color);
+    font-size: var(--paragraph);
+    border-radius: 8px;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.app__navbar-btn:hover {
+    color: var(--white);
+}
+
+@media screen and (width > 900px) {
+    .toggle-navbar {
+        display: none;
+    }
+}
+
+@media screen and (width <= 900px) {
+    .toggle-navbar {
+        margin-left: auto;
+        margin-right: 1rem;
+        z-index: 10;
+    }
+
+    .app__navbar-main {
+        display: none;
+    }
+
+    .app__navbar-main.active {
+        display: initial;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-width: 600px;
+        min-height: 100vh;
+        padding-top: 5rem;
+        background: red;
+        animation: sliding .5s linear alternate;
+    }
+}

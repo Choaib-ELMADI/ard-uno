@@ -1,5 +1,28 @@
+:root {
+  /* Font Sizes */
+  --page__headers:    30px;
+  --section__headers: 24px;
+  --group__headers:   18px;
+  --paragraph:        16px;
+
+  /* Colors */
+  --black:      rgb(15, 18, 22);
+  --white:      #e4e4e4;
+  --our__color: orangered;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: system-ui;
+}
+
+@keyframes sliding {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
