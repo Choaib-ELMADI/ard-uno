@@ -1,10 +1,4 @@
 :root {
-  /* Font Sizes */
-  --page__headers:    30px;
-  --section__headers: 24px;
-  --group__headers:   18px;
-  --paragraph:        16px;
-
   /* Colors */
   --black:      rgb(15, 18, 22);
   --white:      #e4e4e4;

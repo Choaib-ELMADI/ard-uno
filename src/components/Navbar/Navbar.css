@@ -15,10 +15,7 @@
 
 .app__logo {
     text-decoration: none;
-    font-size: var(--page__headers);
-    font-weight: 600;
     color: var(--black);
-    text-shadow: 0 0 4px rgba(0, 0, 0, .5);
     text-transform: capitalize;
     z-index: 10;
 }
@@ -42,9 +39,12 @@
 .app__navbar-main li a {
     text-decoration: none;
     color: var(--black);
-    font-size: var(--group__headers);
     transition: .1s;
     width: 100%;
+}
+
+.app__navbar-main li:hover {
+    opacity: 1 !important;
 }
 
 .app__navbar-main li:hover a {
@@ -56,13 +56,11 @@
     outline: none;
     text-transform: uppercase;
     background: var(--our__color);
-    font-size: var(--paragraph);
     border-radius: 8px;
     padding: 6px 12px;
-    box-shadow: 0 0 4px rgba(0, 0, 0, .5);
+    box-shadow: 0 0 4px rgba(0, 0, 0, .1);
     cursor: pointer;
     transition: .2s;
-    z-index: 10;
 }
 
 .app__navbar-btn:hover {
@@ -73,7 +71,6 @@
     .toggle-navbar {
         display: none;
     }
-
     
     .app__navbar-main:hover li {
         opacity: .6;
@@ -81,9 +78,12 @@
 }
 
 @media screen and (width <= 900px) {
-    .toggle-navbar {
+    .app__navbar-btn {
         margin-left: auto;
         margin-right: 1rem;
+    }
+
+    .toggle-navbar {
         background: transparent;
         border: 0;
         outline: none;
@@ -91,35 +91,35 @@
         cursor: pointer;
     }
 
-    .app__navbar-main {
+    .app__navbar-container {
         display: none;
     }
 
-    .app__navbar-main.active {
+    .app__navbar-container.active {
         display: initial;
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
-        max-width: 600px;
-        min-height: 100vh;
-        padding-top: 5rem;
-        background: #4422;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.5);
         animation: sliding .5s linear alternate;
+    }
+    
+    .app__navbar-container .app__navbar-main {
+        background: rgb(94, 94, 236);
+        width: 100%;
+        max-width: 500px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 15%;
     }
 }
 
 @media screen and (width <= 450px) {
     .app__navbar {
         padding: .5rem 1rem;
-    }
-
-    .app__logo {
-        font-size: var(--section__headers);
-        font-weight: 500;
-    }
-
-    .app__navbar-btn {
-        font-size: calc(var(--paragraph) - 4px);
     }
 }
