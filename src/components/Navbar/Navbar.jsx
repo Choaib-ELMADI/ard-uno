@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { MdOutlineMenuOpen } from 'react-icons/md';
 import { IoClose } from 'react-icons/io5';
 
@@ -9,9 +9,26 @@ const main = ['Services', 'Work', 'About', 'Pricing', 'Pages'];
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
+    const [back, setBack] = useState(false);
+
+    const scrolling = () => {
+        if (window.scrollY >= 30) {
+            setBack(true);
+        }
+        else {
+            setBack(false);
+        }
+    }
+
+    useEffect(() => {
+        scrolling();
+        window.addEventListener("scroll", scrolling);
+      })
+
+    window.onscroll = { scrolling }
 
     return (
-        <nav className='app__navbar'>
+        <nav className={ back ? 'app__navbar active' : 'app__navbar' }>
             <ul className='app__navbar-menu'>
                 <a 
                     href='/' 

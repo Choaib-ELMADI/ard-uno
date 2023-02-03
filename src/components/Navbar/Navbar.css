@@ -1,9 +1,16 @@
 .app__navbar {
     position: fixed;
+    background: rgba(0, 0, 0, 0);
     top: 0;
     left: 0;
     width: 100%;
     padding: .75rem 2rem;
+    transition: .2s;
+}
+
+.app__navbar.active {
+    background: rgba(0, 0, 0, .6);
+    backdrop-filter: blur(8px);
 }
 
 .app__navbar-menu {
@@ -43,10 +50,6 @@
     width: 100%;
 }
 
-.app__navbar-main li:hover {
-    opacity: 1 !important;
-}
-
 .app__navbar-main li:hover a {
     color: var(--our__color);
 }
@@ -70,10 +73,6 @@
 @media screen and (width > 900px) {
     .toggle-navbar {
         display: none;
-    }
-    
-    .app__navbar-main:hover li {
-        opacity: .6;
     }
 }
 
