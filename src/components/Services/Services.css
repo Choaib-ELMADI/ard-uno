@@ -1,0 +1,70 @@
+.app__services {
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1000px;
+}
+
+.app__services-intro {
+    width: 50%;
+    position: relative;
+}
+
+.app__services-intro p {
+    width: 100%;
+    max-width: 500px;
+}
+
+.app__services-intro-content {
+    position: sticky;
+    top: 5rem;
+}
+
+.app__services-main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.app__services-main .card {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    background: gray;
+    position: sticky;
+    top: 5rem;
+}
+
+.app__services-main .card .icon {
+    width: 20%;
+    aspect-ratio: 1;
+}
+
+.app__services-main .card .icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.app__services-main .card p {
+    width: 100%;
+}
+
+@media screen and (width <= 756px) {
+    .app__services {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+@media screen and (width <= 600px) {
+    .app__services {
+        padding: 0 1rem;
+    }
+
+    .app__services-intro {
+        width: 100%;
+    }
+}
