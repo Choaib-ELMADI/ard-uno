@@ -34,7 +34,7 @@ const Navbar = () => {
                     href='/' 
                     className='app__logo'
                 >
-                    <h1>Arduno</h1>
+                    <h1>Ard-uno</h1>
                 </a>
                 <div className={ open ? 'app__navbar-container active' : 'app__navbar-container' }>
                     <ul className='app__navbar-main active'>

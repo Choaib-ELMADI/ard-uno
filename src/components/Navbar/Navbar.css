@@ -5,7 +5,7 @@
     left: 0;
     width: 100%;
     padding: .75rem 2rem;
-    transition: .2s;
+    transition: background .2s;
 }
 
 .app__navbar.active {
@@ -39,14 +39,10 @@
     list-style: none;
 }
 
-.app__navbar-main li {
-    transition: .3s;
-}
-
 .app__navbar-main li a {
     text-decoration: none;
     color: var(--black);
-    transition: .1s;
+    transition: .2s;
     width: 100%;
 }
 
