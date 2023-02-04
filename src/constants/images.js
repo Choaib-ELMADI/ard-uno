@@ -20,6 +20,10 @@ import creates_1          from '../assets/concept.png';
 import creates_2          from '../assets/perfect.png';
 import creates_3          from '../assets/innovative.png';
 
+import testimonials_intro from '../assets/testimonials-intro.jpg';
+
+import quote              from '../assets/quote.png';
+
 const images = {
     banner,
 
@@ -42,6 +46,10 @@ const images = {
     creates_1,
     creates_2,
     creates_3,
+
+    testimonials_intro,
+
+    quote,
 }
 
 export default images;

@@ -119,3 +119,18 @@ export const creates = [
         icon : images.creates_3,
     },
 ];
+
+export const testimonials = [
+    {
+        comment: 'More than happy with Ard-Uno.',
+        details: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
+    },
+    {
+        comment: 'The best customer service.',
+        details: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
+    },
+    {
+        comment: 'We are 100% happy.',
+        details: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
+    },
+];
