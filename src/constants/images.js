@@ -16,6 +16,10 @@ import arduino_car        from '../assets/arduino-car.jpg';
 import arduino_watering   from '../assets/arduino-watering.jpg';
 import arduino_selling    from '../assets/arduino-selling.png';
 
+import creates_1          from '../assets/concept.png';
+import creates_2          from '../assets/perfect.png';
+import creates_3          from '../assets/innovative.png';
+
 export default {
     banner,
 
@@ -35,5 +39,7 @@ export default {
     arduino_watering,
     arduino_selling,
     
-    
+    creates_1,
+    creates_2,
+    creates_3,
 }

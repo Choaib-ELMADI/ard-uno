@@ -77,7 +77,7 @@ export const works = [
         img  : images.arduino_selling,
         link : '#'
     },
-]
+];
 
 export const awards = [
     {
@@ -100,4 +100,22 @@ export const awards = [
         title: 'This is our latest award',
         year : 2022
     },
-]
+];
+
+export const creates = [
+    {
+        title: 'Concept',
+        desc : 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.',
+        icon : images.creates_1,
+    },
+    {
+        title: 'Pexel Perfect',
+        desc : 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.',
+        icon : images.creates_2,
+    },
+    {
+        title: 'Innovative',
+        desc : 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.',
+        icon : images.creates_3,
+    },
+];
