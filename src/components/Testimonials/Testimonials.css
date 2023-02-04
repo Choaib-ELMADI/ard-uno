@@ -33,7 +33,7 @@
 .app__testimonials-card {
     width: 240px;
     min-height: 300px;
-    background: gray;
+    background: rgb(159, 159, 159);
     border-radius: 8px;
     display: flex;
     flex-direction: column;
