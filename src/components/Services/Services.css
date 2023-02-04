@@ -5,6 +5,7 @@
     width: 100%;
     max-width: 2000px;
     margin: auto;
+    margin-top: 2rem;
 }
 
 .app__services-intro {

@@ -3,11 +3,8 @@
     width: 100%;
     max-width: 2000px;
     margin: auto;
-    min-height: 100vh;
     padding-left: 2rem;
     padding-right: 2rem;
-    /* background: greenyellow; */
-    margin-bottom: 50px;
 }
 
 .app__header-top {
@@ -39,6 +36,8 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 
 .app__header-last {
@@ -46,6 +45,8 @@
     background: var(--our__color);
     text-align: center;
     padding: .25rem 0;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 
 .app__header-spons {

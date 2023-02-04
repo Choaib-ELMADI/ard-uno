@@ -1,0 +1,107 @@
+.app__work {
+    width: 100%;
+    max-width: 2000px;
+    margin: auto;
+    margin-top: 4rem;
+    padding: 0 2rem;
+    position: relative;
+}
+
+.app__works-work {
+    position: sticky;
+    top: 5rem;
+    width: 80%;
+    margin: auto;
+    aspect-ratio: 2;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.app__works-work img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.app__work-info {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    width: max-content;
+    background: rgba(220, 220, 220, 0.605);
+    backdrop-filter: blur(4px);
+    padding: .5rem;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .1);
+    transition: .2s;
+}
+
+.app__works-work:hover .app__work-info {
+    box-shadow: 0 0 8px rgba(0, 0, 0, .2);
+}
+
+.app__work-link {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    text-decoration: none;
+    color: var(--black);
+    padding: 5px 8px;
+    border-radius: 5px;
+    border: 1px solid var(--our__color);
+    background: var(--our__color);
+    transition: all .2s;
+}
+
+.app__work-link:hover {
+    background: transparent;
+    color: var(--our__color);
+}
+
+
+@media screen and (width <= 1100px) {
+    .app__works-work {
+        width: 90%;
+    }
+}
+
+@media screen and (width <= 756px) {
+    .app__works-work {
+        width: 100%;
+    }
+
+    .app__work-info {
+        top: 1rem;
+        left: 1rem;
+    }
+
+    .app__work-link {
+        bottom: 1rem;
+        left: 1rem;
+    }
+}
+
+@media screen and (width <= 600px) {
+    .app__work {
+        padding: 0 1rem;
+    }
+
+    .app__works-work {
+        aspect-ratio: 1.1;
+    }
+
+    .app__works-work img {
+        object-fit: cover;
+    }
+}
+
+@media screen and (width <= 500px) {
+    .app__works-work {
+        aspect-ratio: .7;
+    }
+
+    .app__work-info h1 {
+        font-size: 26px;
+    }
+}
