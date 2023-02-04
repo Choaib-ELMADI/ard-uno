@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import './Header.css';
 import { images } from '../../constants/index';
@@ -7,6 +9,10 @@ import { sponsors } from '../../data';
 
 
 const Header = () => {
+  useEffect(() => {
+    AOS.init();
+  }, [])
+
   return (
     <div className='app__header'>
       <div className='app__header-top'>
@@ -31,6 +37,8 @@ const Header = () => {
                 key={ i }
                 href={ s.link }
                 target='_blank'
+                rel='noreferrer'
+                data-aos='fade-up'
               >
                 <img src={ s.img } alt={ s.name } />
               </a>

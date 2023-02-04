@@ -10,7 +10,7 @@ const Services = () => {
     <div id='Services' className='app__services'>
         <div className='app__services-intro'>
           <div className='app__services-intro-content'>
-            <p>Our Services</p>
+            <small><b>Our Services</b></small>
             <h1>Your next <br/>Innovation.</h1>
             <p>
               Lorem ipsum dolor, sit amet consectetur 

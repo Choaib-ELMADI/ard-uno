@@ -1,0 +1,49 @@
+.app__about {
+    width: 100%;
+    max-width: 2000px;
+    margin: auto;
+    padding: 4rem 2rem 0 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.app__about-left {
+    width: 50%;
+}
+
+.app__about-left p {
+    column-count: 2;
+    margin-bottom: 1rem;
+    width: 100%;
+    max-width: 800px;
+}
+
+.app__about-awards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.app__awards-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem .5rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-bottom-right-radius: 8px;
+}
+
+@media screen and (width <= 856px) {
+    .app__about {
+        flex-direction: column;
+    }
+
+    .app__about-left {
+        width: 100%;
+    }
+}
+
+@media screen and (width <= 600px) {
+    .app__about {
+        padding: 4rem 1rem 0 1rem;
+    }
+}
