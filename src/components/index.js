@@ -4,3 +4,4 @@ export { default as Services } from './Services/Services';
 export { default as Work }     from './Work/Work';
 export { default as About }    from './About/About';
 export { default as Create }   from './Create/Create';
+export { default as Testimonials }   from './Testimonials/Testimonials';

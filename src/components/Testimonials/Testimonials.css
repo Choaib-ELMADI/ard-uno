@@ -1,0 +1,58 @@
+.app__testimonials {
+    width: 100%;
+    max-width: 2000px;
+    margin: auto;
+    padding: 4rem 2rem 0 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.app__testimonials-intro {
+    width: 280px;
+    height: 300px;
+    position: relative;
+    color: var(--white);
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.app__testimonials-intro img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.app__testimonials-intro-info {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+.app__testimonials-card {
+    width: 240px;
+    min-height: 300px;
+    background: gray;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 4rem 1rem 1rem 1rem;
+    position: relative;
+}
+
+.app__testimonials-card img {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+@media screen and (width <= 450px) {
+    .app__testimonials-card {
+        width: 100%;
+    }
+}
