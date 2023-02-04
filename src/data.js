@@ -16,6 +16,11 @@ export const sponsors = [
         link: 'https://easyeda.com/fr',
         img : images.easyEDA_logo,
     },
+    {
+        name: 'jlcPCB',
+        link: 'https://jlcpcb.com/',
+        img : images.jlcpcb_logo,
+    }
 ];
 
 export const services = [

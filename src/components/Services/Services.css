@@ -1,11 +1,10 @@
 .app__services {
-    padding: 0 2rem;
+    padding: 4rem 2rem 0 2rem;
     display: flex;
     justify-content: space-around;
     width: 100%;
     max-width: 2000px;
     margin: auto;
-    margin-top: 2rem;
 }
 
 .app__services-intro {
@@ -27,10 +26,11 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
 }
 
 .app__services-main .card {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     width: 100%;
     max-width: 500px;
     border-radius: 10px;
@@ -38,6 +38,17 @@
     background: rgb(197, 197, 197);
     position: sticky;
     top: 5rem;
+}
+
+.app__services-more {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    background: var(--our__color);
+    translate: 0 1rem;
+    padding: .25rem;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
 }
 
 .app__services-main .card .icon {
@@ -65,7 +76,7 @@
 
 @media screen and (width <= 600px) {
     .app__services {
-        padding: 0 1rem;
+        padding: 4rem 1rem 0 1rem;
     }
 
     .app__services-intro {

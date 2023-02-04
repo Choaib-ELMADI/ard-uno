@@ -3,6 +3,7 @@ import banner             from '../assets/banner.webp';
 import arduino_logo       from '../assets/arduino-logo.png';
 import easyEDA_logo       from '../assets/EasyEDA.png';
 import arduinoPlanet_logo from '../assets/arduinoPlanet.png.webp';
+import jlcpcb_logo        from '../assets/jlcpcb-logo.webp';
 
 import coding             from '../assets/services-coding.png';
 import electro            from '../assets/services-electro.png';
@@ -21,6 +22,7 @@ export default {
     arduino_logo,
     easyEDA_logo,
     arduinoPlanet_logo,
+    jlcpcb_logo,
 
     coding,
     electro,

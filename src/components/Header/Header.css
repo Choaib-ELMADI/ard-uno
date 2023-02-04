@@ -56,19 +56,20 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
-}
-
-.app__header-spons a:nth-child(1) img {
-    width: 80px;
-    aspect-ratio: 3/2;
-    object-fit: contain;
+    gap: 1rem 4rem;
 }
 
 .app__header-spons img {
     width: 100px;
-    aspect-ratio: 3/2;
+    aspect-ratio: 1.5;
     object-fit: contain;
+    filter: grayscale(100%);
+    mix-blend-mode: color-burn;
+    transition: .2s;
+}
+
+.app__header-spons a:hover img {
+    filter: grayscale(0);
 }
 
 @media screen and (width <= 756px) {

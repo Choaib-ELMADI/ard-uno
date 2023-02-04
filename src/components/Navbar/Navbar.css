@@ -28,6 +28,19 @@
     z-index: 10;
 }
 
+.app__navbar.active .app__logo h1 {
+    color: var(--white);
+}
+
+.app__navbar.active .toggle-navbar > * {
+    fill: var(--white);
+}
+
+.app__navbar .toggle-navbar > *:hover {
+    transition: .2s;
+    fill: var(--our__color);
+}
+
 .app__logo::first-letter {
     color: var(--our__color);
 }
@@ -47,7 +60,12 @@
     width: 100%;
 }
 
-.app__navbar-main li:hover a {
+.app__navbar.active .app__navbar-main li a {
+    color: var(--white);
+}
+
+.app__navbar .app__navbar-main li:hover a,
+.app__navbar.active .app__navbar-main li:hover a {
     color: var(--our__color);
 }
 

@@ -31,6 +31,7 @@ const Services = () => {
               </div>
             ))
           }
+          <div className="app__services-more"><small>More information</small></div>
         </div>
     </div>
   );

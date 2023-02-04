@@ -5,6 +5,7 @@
     margin-top: 4rem;
     padding: 0 2rem;
     position: relative;
+    margin-bottom: 1000px;
 }
 
 .app__works-work {
@@ -16,6 +17,16 @@
     margin-bottom: 2rem;
     border-radius: 8px;
     overflow: hidden;
+}
+
+.app__work-last {
+    width: 80%;
+    margin: auto;
+    background: var(--our__color);
+    text-align: center;
+    padding: .25rem;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 
 .app__works-work img {
@@ -61,13 +72,15 @@
 
 
 @media screen and (width <= 1100px) {
-    .app__works-work {
+    .app__works-work,
+    .app__work-last {
         width: 90%;
     }
 }
 
 @media screen and (width <= 756px) {
-    .app__works-work {
+    .app__works-work,
+    .app__work-last {
         width: 100%;
     }
 

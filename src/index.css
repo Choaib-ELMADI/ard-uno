@@ -5,6 +5,10 @@
   --our__color: orangered;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 * {
   margin: 0;
   padding: 0;

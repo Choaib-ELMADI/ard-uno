@@ -20,6 +20,7 @@ const Work = () => {
                 </div>
             ))
         }
+        <div className='app__work-last'><small>Lorem ipsum dolor sit amet consectetur adipisicing.</small></div>
     </div>
   );
 };
