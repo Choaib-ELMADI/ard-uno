@@ -1,0 +1,141 @@
+.app__create {
+    width: 100%;
+    max-width: 2000px;
+    margin: auto;
+    padding: 4rem 2rem 0 2rem;
+    position: relative;
+}
+
+.app__create-top {
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: sticky;
+    top: 4rem;
+}
+
+.app__create-top h5 {
+    width: 20%;
+    text-transform: uppercase;
+}
+
+.app__create-create {
+    display: flex;
+    justify-content: space-around;
+    gap: 5%;
+}
+
+.app__create-banner {
+    width: 60%;
+    max-width: 800px;
+    height: 300px;
+    position: sticky;
+    top: 6.5rem;
+}
+
+.app__create-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.app__create-what {
+    width: 40%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.app__create-what .what {
+    width: 100%;
+    background: rgb(134,221,248);
+    position: sticky;
+    top: 6.5rem;
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+}
+
+.what.last {
+    background: var(--our__color);
+    color: var(--white);
+}
+
+.what.last b {
+    text-transform: uppercase;
+    margin-bottom: 1;
+}
+
+.what.last h1 {
+    line-height: 30px;
+    margin-bottom: 1.5rem;
+}
+
+.what.last a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--our__color);
+    background: var(--white);
+    border: 2px solid var(--white);
+    padding: 6px 12px;
+    border-radius: 8px;
+    transition: .2s;
+}
+
+.what.last a:hover {
+    background: transparent;
+    color: var(--white);
+}
+
+.what .what-icon {
+    width: 80px;
+    aspect-ratio: 1;
+    margin-bottom: 1rem;
+}
+
+.what .what-icon img {
+    filter: grayscale(100%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.what h2 {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+@media screen and (width <= 856px) {
+    .app__create-create {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .app__create-banner,
+    .app__create-what {
+        width: 100%;
+    }
+
+    .app__create-top,
+    .app__create-banner {
+        position: static;
+    }
+
+    .app__create-what .what {
+        top: 5rem;
+    }
+}
+
+@media screen and (width <= 600px) {
+    .app__create {
+        padding: 4rem 1rem 0 1rem;
+    }
+
+    .app__create-what .what {
+        padding: .75rem 1rem;
+    }
+}
