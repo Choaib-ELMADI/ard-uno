@@ -22,7 +22,7 @@ const Header = () => {
           <img src={ images.banner } alt="banner" />
         </div>
         <div className="app__header-last">
-          Lorem ipsum dolor sit amet consectetur adipisicing.
+          <small>Lorem ipsum dolor sit amet consectetur adipisicing.</small>
         </div>
         <div className="app__header-spons">
           {

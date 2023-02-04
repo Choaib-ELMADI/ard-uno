@@ -1,6 +1,8 @@
 .app__header {
     padding-top: 5rem;
     width: 100%;
+    max-width: 2000px;
+    margin: auto;
     min-height: 100vh;
     padding-left: 2rem;
     padding-right: 2rem;
@@ -53,17 +55,17 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 2rem 1rem;
+    gap: 1rem;
 }
 
 .app__header-spons a:nth-child(1) img {
-    width: 100px;
+    width: 80px;
     aspect-ratio: 3/2;
     object-fit: contain;
 }
 
 .app__header-spons img {
-    width: 130px;
+    width: 100px;
     aspect-ratio: 3/2;
     object-fit: contain;
 }
