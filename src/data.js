@@ -78,3 +78,26 @@ export const works = [
         link : '#'
     },
 ]
+
+export const awards = [
+    {
+        title: 'This is our first award',
+        year : 2018
+    },
+    {
+        title: 'This is our second award',
+        year : 2019
+    },
+    {
+        title: 'This is the third award',
+        year : 2019
+    },
+    {
+        title: 'This is the fourth award',
+        year : 2021
+    },
+    {
+        title: 'This is our latest award',
+        year : 2022
+    },
+]
