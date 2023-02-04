@@ -20,7 +20,7 @@ import creates_1          from '../assets/concept.png';
 import creates_2          from '../assets/perfect.png';
 import creates_3          from '../assets/innovative.png';
 
-export default {
+const images = {
     banner,
 
     arduino_logo,
@@ -43,3 +43,5 @@ export default {
     creates_2,
     creates_3,
 }
+
+export default images;
