@@ -1,0 +1,194 @@
+.app__footer {
+    width: 100%;
+    padding: 4rem 5%;
+    max-width: 2000px;
+    margin: auto;
+    background: var(--black);
+    margin-top: 4rem;
+    color: var(--white);
+}
+
+a {
+    color: var(--white);
+}
+
+.app__footer-content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.app__footer-subscribe {
+    width: 50%;
+    max-width: 600px;
+}
+
+.app__footer-subscribe .logo {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.app__footer-subscribe .logo::first-letter {
+    color: var(--our__color);
+}
+
+.app__footer-subscribe h4 {
+    font-weight: 550;
+    margin-bottom: 1rem;
+}
+
+form {
+    margin-bottom: 1rem;
+    width: 100%;
+    max-width: 500px;
+}
+
+.app__footer form input {
+    background: var(--our__color);
+    border-radius: 8px;
+    outline: none;
+    border: 0;
+    padding: 8px 12px;
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 1rem;
+    opacity: .6;
+    transition: .2s;
+}
+
+.app__footer form input:is(:focus, :valid) {
+    opacity: 1;
+}
+
+form input::placeholder {
+    color: #e4e4e4e0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.app__footer form button {
+    background: transparent;
+    color: var(--our__color);
+    border: 1px solid var(--our__color);
+    border-radius: 8px;
+    outline: none;
+    padding: 6px 8px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .2s;
+    margin-top: .5rem;
+}
+
+.app__footer form button:hover {
+    background: var(--white);
+    border: 1px solid var(--white);
+}
+
+.did-Sub {
+    margin-bottom: 1rem;
+}
+
+.did-Sub span {
+    color: var(--our__color);
+}
+
+.app__footer-links {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-evenly;
+}
+
+.social, .pages {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+}
+
+.social a, .pages a {
+    text-decoration: none;
+}
+
+.social a {
+    display: flex;
+    align-items: center;
+}
+
+.social .icon {
+    margin-right: .5rem;
+    font-size: 22px;
+}
+
+.line {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    height: 2px;
+    background: var(--white);
+}
+
+.rights {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rights p {
+    margin-right: auto;
+}
+
+.rights a {
+    margin-left: 1.5rem;
+}
+
+@media screen and (width <= 900px) {
+    .app__footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .app__footer-subscribe {
+        margin-bottom: 1.5rem;
+        width: 80%;
+    }
+}
+
+@media screen and (width <= 750px) {
+    .rights {
+        flex-direction: column;
+    }
+    .rights a {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+} 
+
+@media screen and (width <= 501px) {
+    form {
+        width: 100%;
+    }
+
+    form button {
+        margin-top: 0.5rem;
+    }
+
+    .app__footer-subscribe {
+        width: 100%;
+    }
+
+    .app__footer-links {
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (width <= 350px) {
+    .app__footer-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
