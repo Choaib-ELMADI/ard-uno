@@ -40,3 +40,36 @@ export const services = [
         desc  : 'Building a website for the project to share with friends.',
     }
 ];
+
+export const works = [
+    {
+        title: 'Drone',
+        desc : 'Arduino based drone',
+        img  : images.arduino_drone,
+        link : '#',
+    },
+    {
+        title: 'Robot Arm',
+        desc : 'Robotic gripper arm',
+        img  : images.arduino_arm,
+        link : '#'
+    },
+    {
+        title: 'DIY-Car',
+        desc : 'Wireless control car',
+        img  : images.arduino_car,
+        link : '#'
+    },
+    {
+        title: 'Watering System',
+        desc : 'Automatic watering system',
+        img  : images.arduino_watering,
+        link : '#'
+    },
+    {
+        title: 'Selling Machine',
+        desc : 'Automatic selling machine',
+        img  : images.arduino_selling,
+        link : '#'
+    },
+]
