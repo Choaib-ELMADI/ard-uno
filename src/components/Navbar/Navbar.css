@@ -117,6 +117,7 @@
     gap: .6rem;
     padding: 1rem .5rem .75rem .5rem;
     transition: all .3s;
+    z-index: 10;
 }
 
 .projects-links:hover  .projects-links-container {
@@ -175,7 +176,7 @@
     }
     
     .app__navbar-container .app__navbar-main {
-        background: rgb(94, 94, 236);
+        background: rgb(118, 118, 118);
         width: 100%;
         max-width: 500px;
         height: 100%;
@@ -197,6 +198,7 @@
         background: rgba(128, 128, 128, 0.7);
         padding: 6px 12px 2px 12px;
         border-radius: 8px;
+        box-shadow: 0 0 8px rgba(0, 0, 0, .2);
     }
 }
 
