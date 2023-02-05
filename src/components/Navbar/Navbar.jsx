@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { MdOutlineMenuOpen } from 'react-icons/md';
 import { IoClose } from 'react-icons/io5';
 import { BsFillTriangleFill } from 'react-icons/bs';
+import { Link } from 'react-router-dom';
 
 import './Navbar.css';
 import { works } from '../../data';
@@ -55,7 +56,7 @@ const Navbar = () => {
                             <div className="projects-links-container">
                                 {
                                     works.map((w, i) => (
-                                        <a key={ `project-${ i }` } href={ `/${ w.title.toLowerCase() }` }><h4>{ w.title }</h4></a>
+                                        <Link key={ `project-${ i }` } to={ `/projects/${ w.title.toLowerCase() }` }><h4>{ w.title }</h4></Link>
                                     ))
                                 }
                             </div>

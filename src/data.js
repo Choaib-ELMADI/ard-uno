@@ -1,4 +1,5 @@
 import { images } from "./constants/index";
+import { DiyCar, Drone, RobotArm, Selling, Watering } from "./components/index";
 
 export const sponsors = [
     {
@@ -51,31 +52,31 @@ export const works = [
         title: 'Drone',
         desc : 'Arduino based drone',
         img  : images.arduino_drone,
-        link : '#',
+        link : 'drone',
     },
     {
         title: 'Robot-Arm',
         desc : 'Robotic gripper arm',
         img  : images.arduino_arm,
-        link : '#'
+        link : 'root-arm'
     },
     {
         title: 'DIY-Car',
         desc : 'Wireless control car',
         img  : images.arduino_car,
-        link : '#'
+        link : 'diy-car'
     },
     {
         title: 'Watering-System',
         desc : 'Automatic watering system',
         img  : images.arduino_watering,
-        link : '#'
+        link : 'watering-system'
     },
     {
         title: 'Selling-Machine',
         desc : 'Automatic selling machine',
         img  : images.arduino_selling,
-        link : '#'
+        link : 'selling-machine'
     },
 ];
 
@@ -132,5 +133,28 @@ export const testimonials = [
     {
         comment: 'We are 100% happy.',
         details: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
+    },
+];
+
+export const routes = [
+    {
+        path   : '/projects/diy-car',
+        element: <DiyCar />,
+    },
+    {
+        path   : '/projects/drone',
+        element: <Drone />,
+    },
+    {
+        path   : '/projects/robot-arm',
+        element: <RobotArm />,
+    },
+    {
+        path   : '/projects/selling-machine',
+        element: <Selling />,
+    },
+    {
+        path   : '/projects/watering-system',
+        element: <Watering />,
     },
 ];

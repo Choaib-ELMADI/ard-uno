@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import './Work.css';
 import { works } from '../../data';
@@ -16,7 +17,7 @@ const Work = () => {
                         <h1>{ work.title }</h1>
                         <p>{ work.desc }</p>
                     </div>
-                    <a href={ work.link } className="app__work-link"><b>View Project</b></a>
+                    <Link to={ `/projects/${ work.link }`} className="app__work-link"><b>View Project</b></Link>
                 </div>
             ))
         }
