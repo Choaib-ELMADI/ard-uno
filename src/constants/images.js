@@ -24,6 +24,8 @@ import testimonials_intro from '../assets/testimonials-intro.jpg';
 
 import quote              from '../assets/quote.png';
 
+import create_banner      from '../assets/create-banner.png';
+
 const images = {
     banner,
 
@@ -50,6 +52,8 @@ const images = {
     testimonials_intro,
 
     quote,
+
+    create_banner,
 }
 
 export default images;

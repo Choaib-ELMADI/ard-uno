@@ -15,6 +15,7 @@
     align-items: flex-end;
     position: sticky;
     top: 4rem;
+    margin-bottom: .5rem;
 }
 
 .app__create-top h5 {

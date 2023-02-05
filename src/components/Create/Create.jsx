@@ -15,7 +15,7 @@ const Create = () => {
             </div>
             <div className="app__create-create">
                 <div className="app__create-banner">
-                    <img src={ images.banner } alt="creating" />
+                    <img src={ images.create_banner } alt="creating" />
                 </div>
                 <div className="app__create-what">
                     {
