@@ -58,7 +58,7 @@ export const works = [
         title: 'Robot-Arm',
         desc : 'Robotic gripper arm',
         img  : images.arduino_arm,
-        link : 'root-arm'
+        link : 'robot-arm'
     },
     {
         title: 'DIY-Car',
