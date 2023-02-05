@@ -11,6 +11,7 @@
     position: sticky;
     top: 5rem;
     width: 80%;
+    max-width: 1100px;
     margin: auto;
     aspect-ratio: 2;
     margin-bottom: 2rem;
@@ -21,6 +22,7 @@
 .app__work-last {
     width: 80%;
     margin: auto;
+    max-width: 1100px;
     background: var(--our__color);
     text-align: center;
     padding: .25rem;
