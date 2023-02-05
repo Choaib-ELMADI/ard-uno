@@ -56,7 +56,13 @@ const Navbar = () => {
                             <div className="projects-links-container">
                                 {
                                     works.map((w, i) => (
-                                        <Link key={ `project-${ i }` } to={ `/projects/${ w.title.toLowerCase() }` }><h4>{ w.title }</h4></Link>
+                                        <Link 
+                                            key={ `project-${ i }` } 
+                                            to={ `/projects/${ w.title.toLowerCase() }` }
+                                            onClick={ () => setOpen(false) }
+                                        >
+                                            <h4>{ w.title }</h4>
+                                        </Link>
                                     ))
                                 }
                             </div>

@@ -6,3 +6,11 @@
     min-height: 100vh;
     background: greenyellow;
 }
+
+.app__project-main h2 {
+    margin-bottom: 3rem;
+}
+
+.app__project-main .link {
+    color: var(--our__color);
+}

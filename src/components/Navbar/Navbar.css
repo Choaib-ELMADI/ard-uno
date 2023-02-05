@@ -60,10 +60,6 @@
     width: 100%;
 }
 
-.app__navbar.active .app__navbar-main li a {
-    color: var(--white);
-}
-
 .app__navbar .app__navbar-main li:hover a,
 .app__navbar.active .app__navbar-main li:hover a {
     color: var(--our__color);
@@ -87,18 +83,11 @@
 
 .projects-links {
     position: relative;
-}
-
-.projects-links {
     cursor: pointer;
 }
 
 .projects-links .triangle-icon {
     transition: all .2s;
-}
-
-.app__navbar.active .projects-links {
-    color: var(--white);
 }
 
 .app__navbar.active .projects-links:hover {
@@ -142,6 +131,14 @@
 @media screen and (width > 900px) {
     .toggle-navbar {
         display: none;
+    }
+
+    .app__navbar.active .app__navbar-main li a {
+        color: var(--white);
+    }
+
+    .app__navbar.active .projects-links {
+        color: var(--white);
     }
 }
 
