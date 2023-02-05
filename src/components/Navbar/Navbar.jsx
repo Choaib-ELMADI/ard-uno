@@ -3,7 +3,7 @@ import { MdOutlineMenuOpen } from 'react-icons/md';
 import { IoClose } from 'react-icons/io5';
 
 import './Navbar.css';
-const main = ['Services', 'Work', 'About', 'Pricing', 'Pages'];
+const main = ['Services', 'Work', 'About', 'Testimonials', 'Pages'];
 
 
 

@@ -63,11 +63,11 @@
 .what.last {
     background: var(--our__color);
     color: var(--white);
+    padding: 2rem 1.5rem;
 }
 
 .what.last b {
     text-transform: uppercase;
-    margin-bottom: 1;
 }
 
 .what.last h1 {
@@ -137,5 +137,9 @@
 
     .app__create-what .what {
         padding: .75rem 1rem;
+    }
+    
+    .what.last  {
+        padding: .75rem 1rem 2rem 1rem;
     }
 }

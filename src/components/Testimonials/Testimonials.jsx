@@ -14,7 +14,7 @@ const Testimonials = () => {
     }, [])
 
     return (
-        <div className='app__testimonials'>
+        <div id='Testimonials' className='app__testimonials'>
             <div data-aos="fade-down" className='app__testimonials-intro'>
                 <img src={ images.testimonials_intro } alt="testimonials" />
                 <div className="app__testimonials-intro-info">
