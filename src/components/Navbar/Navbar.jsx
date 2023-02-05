@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { MdOutlineMenuOpen } from 'react-icons/md';
 import { IoClose } from 'react-icons/io5';
+import { BsFillTriangleFill } from 'react-icons/bs';
 
 import './Navbar.css';
-const main = ['Services', 'Work', 'About', 'Testimonials', 'Pages'];
+import { works } from '../../data';
+const main = ['Services', 'Work', 'About', 'Testimonials'];
 
 
 
@@ -48,6 +50,16 @@ const Navbar = () => {
                                 </li>
                             ))
                         }
+                        <div className='projects-links'>
+                            <h4>Pages <BsFillTriangleFill className='triangle-icon' fontSize={ 10 } /></h4>
+                            <div className="projects-links-container">
+                                {
+                                    works.map((w, i) => (
+                                        <a key={ `project-${ i }` } href={ `/${ w.title.toLowerCase() }` }><h4>{ w.title }</h4></a>
+                                    ))
+                                }
+                            </div>
+                        </div>
                     </ul>
                 </div>
                 <button className='app__navbar-btn'>Let's Talk</button>

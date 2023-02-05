@@ -85,6 +85,60 @@
     color: var(--white);
 }
 
+.projects-links {
+    position: relative;
+}
+
+.projects-links {
+    cursor: pointer;
+}
+
+.projects-links .triangle-icon {
+    transition: all .2s;
+}
+
+.app__navbar.active .projects-links {
+    color: var(--white);
+}
+
+.app__navbar.active .projects-links:hover {
+    color: var(--our__color);
+}
+
+.projects-links:hover {
+    color: var(--our__color);
+}
+
+.projects-links:hover .triangle-icon {
+    transform: rotateZ(180deg);
+}
+
+.projects-links-container {
+    position: absolute;
+    top: 1rem;
+    opacity: 0;
+    visibility: hidden;
+    background: rgba(0, 0, 0, 0.85);
+    width: max-content;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+    padding: 1rem .5rem .75rem .5rem;
+    transition: all .3s;
+}
+
+.projects-links:hover  .projects-links-container {
+    width: max-content;
+    opacity: 1;
+    visibility: visible;
+    top: 1.4rem;
+}
+
+.app__navbar-container a {
+    text-decoration: none;
+}
+
 @media screen and (width > 900px) {
     .toggle-navbar {
         display: none;

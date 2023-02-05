@@ -54,7 +54,7 @@ export const works = [
         link : '#',
     },
     {
-        title: 'Robot Arm',
+        title: 'Robot-Arm',
         desc : 'Robotic gripper arm',
         img  : images.arduino_arm,
         link : '#'
@@ -66,13 +66,13 @@ export const works = [
         link : '#'
     },
     {
-        title: 'Watering System',
+        title: 'Watering-System',
         desc : 'Automatic watering system',
         img  : images.arduino_watering,
         link : '#'
     },
     {
-        title: 'Selling Machine',
+        title: 'Selling-Machine',
         desc : 'Automatic selling machine',
         img  : images.arduino_selling,
         link : '#'
