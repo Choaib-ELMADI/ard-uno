@@ -1,8 +1,6 @@
 .app__footer {
     width: 100%;
     padding: 4rem 5%;
-    max-width: 2000px;
-    margin: auto;
     background: var(--black);
     margin-top: 4rem;
     color: var(--white);
@@ -140,6 +138,10 @@ form input::placeholder {
 
 .rights p {
     margin-right: auto;
+}
+
+.rights p a {
+    margin-left: 0;
 }
 
 .rights a {
