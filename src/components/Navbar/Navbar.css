@@ -68,8 +68,10 @@
 .app__navbar-btn {
     border: 0;
     outline: none;
+    text-decoration: none;
     text-transform: uppercase;
     background: var(--our__color);
+    color: var(--black);
     border-radius: 8px;
     padding: 6px 12px;
     box-shadow: 0 0 4px rgba(0, 0, 0, .1);
@@ -104,7 +106,7 @@
 
 .projects-links-container {
     position: absolute;
-    top: 1rem;
+    top: .8rem;
     opacity: 0;
     visibility: hidden;
     background: rgba(0, 0, 0, 0.85);
@@ -129,7 +131,8 @@
 }
 
 @media screen and (width > 900px) {
-    .toggle-navbar {
+    .toggle-navbar,
+    .app__navbar-social {
         display: none;
     }
 
@@ -178,8 +181,22 @@
         height: 100%;
         display: flex;
         flex-direction: column;
+        justify-content: flex-start;
         align-items: flex-start;
+        padding-top: 10rem;
         padding-left: 15%;
+        position: relative;
+    }
+
+    .app__navbar-social {
+        position: absolute;
+        bottom: 1rem;
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        background: rgba(128, 128, 128, 0.7);
+        padding: 6px 12px 2px 12px;
+        border-radius: 8px;
     }
 }
 

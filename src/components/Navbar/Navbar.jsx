@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { MdOutlineMenuOpen } from 'react-icons/md';
 import { IoClose } from 'react-icons/io5';
-import { BsFillTriangleFill } from 'react-icons/bs';
+import { BsFillTriangleFill, BsFacebook, BsInstagram, BsLinkedin, BsGithub } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 
 import './Navbar.css';
@@ -67,9 +67,39 @@ const Navbar = () => {
                                 }
                             </div>
                         </div>
+                        <div className='app__navbar-social'>
+                            <a 
+                                href="https://www.linkedin.com/in/choaib-elmadi" 
+                                target='_blank' 
+                                rel='noreferrer'
+                            >
+                                <BsLinkedin fontSize={ 26 } />
+                            </a>
+                            <a 
+                                href="https://github.com/Choaib-ELMADI" 
+                                target='_blank' 
+                                rel='noreferrer'
+                            >
+                                <BsGithub fontSize={ 26 } />
+                            </a>
+                            <a 
+                                href="https://instagram.com/choaib_elmadi?igshid=YmMyMTA2M2Y" 
+                                target='_blank' 
+                                rel='noreferrer'
+                            >
+                                <BsInstagram fontSize={ 26 } />
+                            </a>
+                            <a 
+                                href="https://www.facebook.com/choaib.elmadi.94" 
+                                target='_blank' 
+                                rel='noreferrer'
+                            >
+                                <BsFacebook fontSize={ 26 } />
+                            </a>
+                        </div>
                     </ul>
                 </div>
-                <button className='app__navbar-btn'>Let's Talk</button>
+                <a href='mailto:choaib3elmadi@gmail.com' className='app__navbar-btn'>Let's Talk</a>
                 <button 
                     onClick={ () => setOpen(!open) }
                     className='toggle-navbar'
