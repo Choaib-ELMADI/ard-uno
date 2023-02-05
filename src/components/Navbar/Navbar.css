@@ -191,7 +191,7 @@
 
     .app__navbar-social {
         position: absolute;
-        bottom: 1rem;
+        bottom: 3rem;
         display: flex;
         gap: 2rem;
         align-items: center;
