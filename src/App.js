@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 
 import './App.css';
 import { routes } from './data';
-import { Navbar, Header, Services, Work, About, Create, Testimonials, Footer, Cookie, Privacy } from './components/index';
+import { Navbar, Header, Services, Work, About, Create, Testimonials, Footer, Cookie, Privacy, NotFound } from './components/index';
 
 
 
@@ -35,6 +35,7 @@ const App = () => {
         { routePaths }
         <Route path='/privacy' element={ <Privacy /> } />
         <Route path='/cookie' element={ <Cookie /> } />
+        <Route path="*" element={ <NotFound /> } />
       </Routes>
     </div>
   );

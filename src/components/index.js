@@ -15,3 +15,5 @@ export { default as Drone }    from './Projects/Drone';
 export { default as RobotArm } from './Projects/RobotArm';
 export { default as Selling }  from './Projects/Selling';
 export { default as Watering } from './Projects/Watering';
+
+export { default as NotFound } from './NotFound/NotFound';
