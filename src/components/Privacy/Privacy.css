@@ -1,0 +1,30 @@
+.our-privacy {
+    width: 80%;
+    max-width: 2000px;
+    margin: auto;
+    padding-top: 7rem;
+}
+
+.secondary-footer {
+    width: 100%;
+    background: var(--black);
+    color: var(--white);
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.rule {
+    margin-top: 2rem;
+}
+
+a {
+    color: var(--our__color);
+}
+
+@media screen and (width <= 1000px) {
+    .our-privacy {
+        width: 90%;
+    }
+}

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import './Footer.css';
 import { AiFillLinkedin, AiFillGithub, AiFillInstagram, AiFillFacebook } from 'react-icons/ai';
@@ -73,9 +74,8 @@ const Footer = () => {
           <div className='line' />
           <div className="rights">
             <p>©2023 <a href='https://choaib-elmadi.netlify.app/' target='_blank' rel='noreferrer'>Choaib-ELMADI</a>. All right reserved.</p>
-            <a href="/">Privacy Policy</a>
-            <a href="/">Cookie Policy</a>
-            <a href="/">Cookie Settings</a>
+            <Link className='go' to="/privacy">Privacy Policy</Link>
+            <Link className='go' to="/cookie">Cookie Policy</Link>
           </div>
       </div>
     </div>

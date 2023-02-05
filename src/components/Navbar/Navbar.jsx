@@ -44,7 +44,7 @@ const Navbar = () => {
                                     key={ item }
                                     onClick={ () => setOpen(false) }
                                 >
-                                    <a href={ `#${ item }` }><h4>{ item }</h4></a>
+                                    <a href={ `/#${ item }` }><h4>{ item }</h4></a>
                                 </li>
                             ))
                         }
