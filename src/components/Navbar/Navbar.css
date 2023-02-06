@@ -171,6 +171,7 @@
         top: 0;
         left: 0;
         width: 100%;
+        min-height: 100vh;
         background: rgba(0, 0, 0, 0.5);
         animation: sliding .5s linear alternate;
     }
@@ -196,7 +197,7 @@
         display: flex;
         flex-direction: column;
         gap: 2rem;
-        /* align-items: center; */
+        align-items: center;
         background: rgba(128, 128, 128, 0.7);
         padding: 6px 12px 2px 12px;
         border-radius: 8px;
