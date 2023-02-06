@@ -191,10 +191,13 @@
 
     .app__navbar-social {
         position: absolute;
-        bottom: 3rem;
+        right: 2rem;
+        top: 50%;
+        transform: translateY(-50%);
         display: flex;
+        flex-direction: column;
         gap: 2rem;
-        align-items: center;
+        /*align-items: center;*/
         background: rgba(128, 128, 128, 0.7);
         padding: 6px 12px 2px 12px;
         border-radius: 8px;
