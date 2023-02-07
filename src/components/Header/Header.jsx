@@ -16,7 +16,7 @@ const Header = () => {
   return (
     <div className='app__header'>
       <div className='app__header-top'>
-        <h1>Lorem ipsum <br/>consectetur.</h1>
+        <h1>Arduino & <br/>Microcontrollers.</h1>
         <p>
           Lorem, ipsum dolor sit amet adipisicing elit. 
           Lorem ipsum dolor sit. 
