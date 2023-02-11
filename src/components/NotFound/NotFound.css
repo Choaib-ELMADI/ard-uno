@@ -17,7 +17,7 @@
     animation: hue 1s infinite linear;
 }
 
-.link {
+.app__not-found .link {
     text-decoration: none;
     background-image: linear-gradient(92deg, #f35626, #feab3a);
     background-clip: text;
