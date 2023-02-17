@@ -14,20 +14,11 @@
     max-width: 1100px;
     margin: auto;
     aspect-ratio: 2;
+    max-height: 80vh;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .2);
     margin-bottom: 2rem;
     border-radius: 8px;
     overflow: hidden;
-}
-
-.app__work-last {
-    width: 80%;
-    margin: auto;
-    max-width: 1100px;
-    background: var(--our__color);
-    text-align: center;
-    padding: .25rem;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
 }
 
 .app__works-work img {
@@ -41,7 +32,7 @@
     top: 2rem;
     left: 2rem;
     width: max-content;
-    background: rgba(220, 220, 220, 0.605);
+    background: rgba(255, 68, 0, .4);
     backdrop-filter: blur(4px);
     padding: .5rem;
     border-radius: 8px;
@@ -73,15 +64,13 @@
 
 
 @media screen and (width <= 1100px) {
-    .app__works-work,
-    .app__work-last {
+    .app__works-work {
         width: 90%;
     }
 }
 
 @media screen and (width <= 756px) {
-    .app__works-work,
-    .app__work-last {
+    .app__works-work {
         width: 100%;
     }
 
@@ -102,7 +91,7 @@
     }
 
     .app__works-work {
-        aspect-ratio: 1.1;
+        height: 50vh;
     }
 
     .app__works-work img {
@@ -111,11 +100,7 @@
 }
 
 @media screen and (width <= 500px) {
-    .app__works-work {
-        aspect-ratio: .7;
-    }
-
     .app__work-info h1 {
-        font-size: 26px;
+        font-size: 24px;
     }
 }
