@@ -179,7 +179,6 @@
     .app__navbar-container .app__navbar-main {
         background: rgb(118, 118, 118);
         width: 100%;
-        max-width: 500px;
         min-height: 100vh;
         display: flex;
         flex-direction: column;
