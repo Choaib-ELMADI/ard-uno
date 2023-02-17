@@ -62,7 +62,7 @@ const Footer = () => {
             <div className="our-pages">
               <h2 className="title">Pages</h2>
               <div className="pages">
-                <a href="#">Home</a>
+                <a href="/#">Home</a>
                 <a href="#Services">Services</a>
                 <a href="#Work">Work</a>
                 <a href="#About">About</a>

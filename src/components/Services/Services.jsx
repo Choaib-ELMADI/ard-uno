@@ -31,7 +31,6 @@ const Services = () => {
               </div>
             ))
           }
-          <a href='tel:0614001973' className="app__services-more"><small>More information</small></a>
         </div>
     </div>
   );

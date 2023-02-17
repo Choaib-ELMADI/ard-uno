@@ -39,17 +39,6 @@
     top: 5rem;
 }
 
-.app__services-more {
-    width: 100%;
-    max-width: 500px;
-    text-align: center;
-    background: var(--our__color);
-    translate: 0 1rem;
-    padding: .25rem;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
-}
-
 .app__services-main .card .icon {
     width: 80px;
     aspect-ratio: 1;
