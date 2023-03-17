@@ -14,7 +14,7 @@ const App = () => {
       path={ path }
       element={ element }
     />
-);
+  );
 
   return (
     <div className='app'>

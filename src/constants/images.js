@@ -10,6 +10,10 @@ import electro            from '../assets/services-electro.png';
 import testing            from '../assets/services-testing.png';
 import website            from '../assets/services-website.png';
 
+/* Solar Light Detector */
+import arduino_solar_light       from '../assets/arduino_solar_light.jpg'; 
+import arduino_solar_light_small from '../assets/arduino_solar_light_small.jpg'; 
+
 import arduino_drone      from '../assets/arduino-drone.jpg';
 import arduino_arm        from '../assets/arduino-arm.jpg';
 import arduino_car        from '../assets/arduino-car.jpg';
@@ -38,6 +42,9 @@ const images = {
     electro,
     testing,
     website,
+
+    arduino_solar_light,
+    arduino_solar_light_small,
 
     arduino_drone,
     arduino_arm,
