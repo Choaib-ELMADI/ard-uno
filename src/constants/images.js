@@ -30,6 +30,8 @@ import quote              from '../assets/quote.png';
 
 import create_banner      from '../assets/create-banner.png';
 
+import profile            from '../assets/profile.jpg';
+
 const images = {
     banner,
 
@@ -61,6 +63,8 @@ const images = {
     quote,
 
     create_banner,
+
+    profile,
 }
 
 export default images;

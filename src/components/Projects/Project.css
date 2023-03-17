@@ -7,10 +7,52 @@
     background: greenyellow;
 }
 
-.app__project-main h2 {
-    margin-bottom: 3rem;
+
+
+.app__project-header h3 {
+    margin: 2rem 0 1rem 0;
 }
 
-.app__project-main .link {
+.app__project-header .link {
     color: var(--our__color);
+}
+
+
+
+.app__project-header-creator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.app__project-header-creator img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.app__project-header-creator a {
+    text-decoration: none;
+    color: rgb(0, 0, 255);
+    transition: .2s;
+}
+
+.app__project-header-creator a:hover {
+    color: var(--our__color);
+}
+
+.app__project-banner {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+
+.app__project-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 12px;
 }
