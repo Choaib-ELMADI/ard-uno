@@ -1,18 +1,19 @@
 .app__project-main {
     width: 100%;
     max-width: 2000px;
-    padding: 5rem 2rem 1rem 2rem;
+    padding: 5rem 2rem 3rem 2rem;
     margin: auto;
     min-height: 100vh;
     background: greenyellow;
 }
 
 
-
+.app__project-header {
+    margin-bottom: 2rem;
+}
 .app__project-header h3 {
     margin: 2rem 0 1rem 0;
 }
-
 .app__project-header .link {
     color: var(--our__color);
 }
@@ -46,13 +47,94 @@
 
 .app__project-banner {
     width: 100%;
-    max-width: 600px;
+    max-width: 620px;
     margin: auto;
 }
-
 .app__project-banner img {
     width: 100%;
     height: 100%;
     object-fit: contain;
     border-radius: 12px;
+}
+
+.app__project-body .intro {
+    width: 100%;
+    max-width: 900px;
+    margin-bottom: 2rem;
+}
+.app__project-body .steps h2 {
+    margin-bottom: 1rem;
+}
+.app__project-body .steps ol {
+    padding-left: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.app__project-body .steps ol li {
+    color: #6b6767;
+}
+.app__project-body .steps a {
+    text-decoration: none;
+    color: black;
+    transition: .2s;
+    cursor: pointer;
+}
+.app__project-body .steps a:hover {
+    color: #6b6767;
+}
+
+.app__project-body :is(.model-3d, .parts-3d) {
+    padding-top: 3rem;
+}
+.app__project-body :is(.model-3d, .parts-3d) h3 {
+    width: 100%;
+    max-width: 900px;
+    margin: 1rem 0;
+}
+.app__project-body :is(.model-3d, .parts-3d) .imgs-container {
+    width: 100%;
+    display: flex;
+    gap: .5rem;
+}
+.app__project-body :is(.model-3d, .parts-3d) .item {
+    flex: .5;
+    max-width: 370px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: .5rem;
+}
+.app__project-body :is(.model-3d, .parts-3d) .image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+.app__project-body :is(.model-3d, .parts-3d) .item a {
+    text-decoration: none;
+    color: black;
+    transition: .2s;
+}
+.app__project-body :is(.model-3d, .parts-3d) .item a:hover {
+    color: var(--our__color);
+}
+
+
+@media screen and (width <= 600px) {
+    .app__project-main {
+        padding: 5rem 1rem 1rem 1rem;
+    }
+
+    .app__project-header h1 {
+        font-size: 27px;
+    }
+}
+
+@media screen and (width <= 500px) {
+    .app__project-body .model-3d .imgs-container {
+        flex-direction: column;
+    }
+    .app__project-body .model-3d .image {
+        flex: 1;
+    }
 }
