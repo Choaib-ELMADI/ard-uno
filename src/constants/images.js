@@ -12,7 +12,10 @@ import website            from '../assets/services-website.png';
 
 /* Solar Light Detector */
 import arduino_solar_light       from '../assets/arduino_solar_light.jpg'; 
-import arduino_solar_light_small from '../assets/arduino_solar_light_small.jpg'; 
+import arduino_solar_light_small from '../assets/arduino_solar_light_small.jpg';
+import solar_panel_1             from '../assets/solar-panel-1.jpg';
+import servo_motor               from '../assets/servo-motor-model.jpg';
+import solar_panel_2             from '../assets/solar-panel-2.jpg';
 
 import arduino_drone      from '../assets/arduino-drone.jpg';
 import arduino_arm        from '../assets/arduino-arm.jpg';
@@ -47,6 +50,9 @@ const images = {
 
     arduino_solar_light,
     arduino_solar_light_small,
+    solar_panel_1,
+    solar_panel_2,
+    servo_motor,
 
     arduino_drone,
     arduino_arm,
