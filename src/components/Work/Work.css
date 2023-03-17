@@ -97,9 +97,7 @@
     .app__works-work img {
         object-fit: cover;
     }
-}
 
-@media screen and (width <= 500px) {
     .app__work-info h1 {
         font-size: 24px;
     }
