@@ -150,7 +150,7 @@ const SolarPanel = () => {
         </div>
 
         <div id="project-parts-assembly" className='parts-assembly'>
-
+            
         </div>
 
         <div id="project-circuit" className='circuit'>

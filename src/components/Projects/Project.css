@@ -27,20 +27,17 @@
     gap: 1rem;
     margin: 2rem 0;
 }
-
 .app__project-header-creator img {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     object-fit: cover;
 }
-
 .app__project-header-creator a {
     text-decoration: none;
     color: rgb(0, 0, 255);
     transition: .2s;
 }
-
 .app__project-header-creator a:hover {
     color: var(--our__color);
 }
@@ -190,6 +187,10 @@
 .app__project-body .parts-3d .thangs img {
     width: 100%;
     max-width: 900px;
+}
+
+.app__project-body .parts-assembly {
+    
 }
 
 @media screen and (width <= 900px) {
