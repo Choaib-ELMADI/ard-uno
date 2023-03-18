@@ -16,6 +16,14 @@ import arduino_solar_light_small from '../assets/arduino_solar_light_small.jpg';
 import solar_panel_1             from '../assets/solar-panel-1.jpg';
 import servo_motor               from '../assets/servo-motor-model.jpg';
 import solar_panel_2             from '../assets/solar-panel-2.jpg';
+import solar_panel_base          from '../assets/solar-panel-base.jpg';
+import solar_panel_base_done     from '../assets/solar-panel-base-done.jpg';
+import solar_panel_holders       from '../assets/solar-panel-holders.jpg';
+import solar_panel_holders_done  from '../assets/solar-panel-holders-done.jpg';
+import solar_panel_ldrs          from '../assets/solar-panel-ldrs.jpg';
+import solar_panel_servo_mounted from '../assets/solar-panel-servo-mounted.jpg';
+import thangs_base_panel         from '../assets/thangs_base_panel.png';
+import thangs_logo               from '../assets/thangs_logo.png';
 
 import arduino_drone      from '../assets/arduino-drone.jpg';
 import arduino_arm        from '../assets/arduino-arm.jpg';
@@ -48,11 +56,20 @@ const images = {
     testing,
     website,
 
+    /* Soalr Light Tracker */
     arduino_solar_light,
     arduino_solar_light_small,
     solar_panel_1,
     solar_panel_2,
     servo_motor,
+    solar_panel_base,
+    solar_panel_base_done,
+    solar_panel_holders,
+    solar_panel_holders_done,
+    solar_panel_ldrs,
+    solar_panel_servo_mounted,
+    thangs_base_panel,
+    thangs_logo,
 
     arduino_drone,
     arduino_arm,

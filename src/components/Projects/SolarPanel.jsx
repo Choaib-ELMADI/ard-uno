@@ -3,7 +3,8 @@ import React from 'react';
 
 import './Project.css';
 import { images } from '../../constants/index';
-const someData = [
+
+const model_3d = [
   {
     img: images.solar_panel_1,
     link: "https://get-3d.netlify.app/models/solar-light-follower",
@@ -17,6 +18,39 @@ const someData = [
     link: "https://get-3d.netlify.app/models/solar-light-follower",
   },
 ];
+const parts_3d = [
+  { 
+    img: images.solar_panel_base,
+    title: 'Panel Base',
+    link: 'https://thangs.com/mythangs/file/799776',
+  },
+  { 
+    img: images.solar_panel_base_done,
+    title: 'Panel Base',
+    link: 'https://thangs.com/mythangs/file/799776',
+  },
+  { 
+    img: images.solar_panel_holders,
+    title: 'Panel Stent',
+    link: 'https://thangs.com/mythangs/file/799776',
+  },
+  { 
+    img: images.solar_panel_holders_done,
+    title: 'Panel Stent',
+    link: 'https://thangs.com/mythangs/file/799776',
+  },
+  { 
+    img: images.solar_panel_ldrs,
+    title: 'Servo / LDRs',
+    link: 'https://thangs.com/mythangs/file/800047',
+  },
+  { 
+    img: images.solar_panel_servo_mounted,
+    title: 'Servo Motor',
+    link: 'https://thangs.com/mythangs/file/800016',
+  },
+];
+
 
 
 
@@ -61,11 +95,10 @@ const SolarPanel = () => {
           </h3>
           <div className='imgs-container'>
             {
-              someData.map((item, i) => (
-                <div className='item'>
+              model_3d.map((item, i) => (
+                <div className='item' key={ `item-${ i }` }>
                   <div 
-                    className='image' 
-                    key={ i }
+                    className='image'
                   >
                     <img src={ item.img } alt="light tracker 3d model" />
                   </div>
@@ -83,6 +116,37 @@ const SolarPanel = () => {
             But I'm looking forward to buying one. 
             So we are just going to use some Cardboard.
           </h3>
+          <div className='imgs-container'>
+            {
+              parts_3d.map((item, i) => (
+                <div className='item' key={ `part-${ i }` }>
+                  <img src={ item.img } alt="light tracker 3d parts" />
+                  <div className='item-overlay'>
+                      <h3>{ item.title }</h3>
+                  </div>
+                  <span className='number'><h5>{ i+1 }</h5></span>
+                  <span className='icon'>
+                    <a 
+                      href={ item.link } 
+                      target='_blank' 
+                      rel='noreferrer'
+                    >
+                      <img src={ images.thangs_logo } alt="thangs logo" />
+                    </a>
+                  </span>
+                </div>
+              ))
+            }
+          </div>
+          <div className='thangs'>
+            <h3>
+              You can find and download this 3D model, 
+              as well as explore it in your browser on Thangs:
+            </h3>
+            <a href='https://thangs.com/designer/Choaib.ELMADI' target='_blank' rel='noreferrer'>
+              <img src={ images.thangs_base_panel } alt="thangs solar base" />
+            </a>
+          </div>
         </div>
 
         <div id="project-parts-assembly" className='parts-assembly'>
