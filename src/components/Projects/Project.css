@@ -81,10 +81,10 @@
     color: #6b6767;
 }
 
-.app__project-body :is(.model-3d, .parts-3d) {
+.app__project-body :is(.model-3d, .parts-3d, .parts-assembly) {
     padding-top: 3rem;
 }
-.app__project-body :is(.model-3d, .parts-3d) h3 {
+.app__project-body :is(.model-3d, .parts-3d, .parts-assembly) h3 {
     width: 100%;
     max-width: 900px;
     margin: 1rem 0;
@@ -189,8 +189,17 @@
     max-width: 900px;
 }
 
-.app__project-body .parts-assembly {
-    
+.app__project-body .parts-assembly .imgs-container {
+    width: 100%;
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+}
+.app__project-body .parts-assembly .imgs-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 @media screen and (width <= 900px) {
@@ -229,11 +238,7 @@
 }
 
 @media screen and (widht <= 380px) {
-    .app__project-body :is(.model-3d) .imgs-container {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .app__project-body .parts-3d .imgs-container {
+    .app__project-body :is(.model-3d, .parts-3d, .parts-assembly) .imgs-container {
         grid-template-columns: repeat(1, 1fr);
     }
 }

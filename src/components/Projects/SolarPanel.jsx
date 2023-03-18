@@ -150,7 +150,36 @@ const SolarPanel = () => {
         </div>
 
         <div id="project-parts-assembly" className='parts-assembly'>
-            
+          <h1>Assembling the Solar Light Tracker</h1>
+          <h3>
+            Now, we are ready to assemble the solar panel. 
+            I started with assembling the parts of the base
+            using some hot glue. Then I attached the 
+            main servo motor using the screws included in 
+            its package and some hot glue.
+          </h3>
+          <div className='imgs-container'>
+            <div>
+              <img src={ images.solar_panel_holders_done } />
+            </div>
+            <div>
+              <img src={ images.solar_panel_servo_mounted } />
+            </div>
+          </div>
+          <h3> 
+            Then on the output shaft of the servo I secured the ldrs holder.
+          </h3>
+          <div className='imgs-container'>
+            <div>
+              <img src={ images.solar_panel_ldrs } />
+            </div>
+            <div>
+              <img src={ images.solar_panel_1 } />
+            </div>
+          </div>
+          <h3> 
+            And Now, our solar light detector is fully assembled and ready.
+          </h3>
         </div>
 
         <div id="project-circuit" className='circuit'>
