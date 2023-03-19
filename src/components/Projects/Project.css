@@ -81,10 +81,10 @@
     color: #6b6767;
 }
 
-.app__project-body :is(.model-3d, .parts-3d, .parts-assembly) {
+.app__project-body :is(.model-3d, .parts-3d, .parts-assembly, .circuit) {
     padding-top: 3rem;
 }
-.app__project-body :is(.model-3d, .parts-3d, .parts-assembly) h3 {
+.app__project-body :is(.model-3d, .parts-3d, .parts-assembly, .circuit) h3 {
     width: 100%;
     max-width: 900px;
     margin: 1rem 0;
@@ -134,14 +134,13 @@
 .app__project-body .parts-3d .imgs-container .item .item-overlay {
     position: absolute;
     left: 0;
-    bottom: -150%;
+    bottom: 100%;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
     padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 100%;
-    padding-bottom: 3.5rem;
+    display: flex;
+    align-items: flex-end;
     transition: .3s;
     z-index: 2;
 }
@@ -200,6 +199,16 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 12px;
+}
+
+.app__project-body .circuit .project-circuit {
+    width: 100%;
+    max-width: 900px;
+}
+.app__project-body .circuit .project-circuit img {
+    width: 100%;
+    height: 100%;
 }
 
 @media screen and (width <= 900px) {

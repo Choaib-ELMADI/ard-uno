@@ -24,6 +24,8 @@ import solar_panel_ldrs          from '../assets/solar-panel-ldrs.jpg';
 import solar_panel_servo_mounted from '../assets/solar-panel-servo-mounted.jpg';
 import thangs_base_panel         from '../assets/thangs_base_panel.png';
 import thangs_logo               from '../assets/thangs_logo.png';
+import solar_panel_circuit       from '../assets/solar-panel-circuit.png';
+import solar_panel_schematic     from '../assets/solar-panel-schematic.png';
 
 import arduino_drone      from '../assets/arduino-drone.jpg';
 import arduino_arm        from '../assets/arduino-arm.jpg';
@@ -70,6 +72,8 @@ const images = {
     solar_panel_servo_mounted,
     thangs_base_panel,
     thangs_logo,
+    solar_panel_circuit,
+    solar_panel_schematic,
 
     arduino_drone,
     arduino_arm,

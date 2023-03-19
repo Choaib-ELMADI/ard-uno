@@ -183,7 +183,23 @@ const SolarPanel = () => {
         </div>
 
         <div id="project-circuit" className='circuit'>
-
+            <h1>Arduino Solar Panel Circuit Diagram</h1>
+            <h3>
+              The next stage is connecting the electronics. 
+              The circuit diagram of this project is actually quite simple. 
+              We just need an Arduino board and a Servo motor to move the panel. 
+              And two Photoresistor.
+            </h3>
+            <div className='project-circuit'>
+              <img src={ images.solar_panel_circuit } alt="arduino circuit" />
+            </div>
+            <h3>
+              And because the servo motor needs 5V, 
+              and the arduino can't handle this we must 
+              provide an external power source. 
+              In our case, it's OK because we only have one servo. <br />
+              Once we connected eveything, we can move on to programming the arduino.
+            </h3>
         </div>
 
         <div id="project-code" className='code'>
