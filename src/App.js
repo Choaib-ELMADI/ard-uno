@@ -28,7 +28,6 @@ const App = () => {
             <About />
             <Create />
             <Testimonials />
-            <Footer />
           </>
          }
         />
@@ -37,6 +36,7 @@ const App = () => {
         <Route path='/cookie' element={ <Cookie /> } />
         <Route path="*" element={ <NotFound /> } />
       </Routes>
+      <Footer />
     </div>
   );
 };
