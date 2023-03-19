@@ -1,5 +1,4 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
 
 import './Project.css';
 import { images } from '../../constants/index';
@@ -203,9 +202,77 @@ const SolarPanel = () => {
         </div>
 
         <div id="project-code" className='code'>
+          <h1>Arduino Code</h1>
+          <h3>
+            The main code is quite simple. First, we need 
+            to include the Servo library, create our LDR 
+            pins and the interval of error. We attach the servo 
+            to its pin and start reading the values of the two LDRs. 
+            Based on the difference between these two, we tell the servo where to rotate. <br /> <br />
+            <a  
+              href='https://github.com/Choaib-ELMADI/Arduino' 
+              target='_blank' 
+              rel='noreferrer'
+              style={{
+                textDecoration: 'none',
+                color: '#6b6767',
+              }}
+            >Check my Github account for more</a>.
+          </h3>
+          <div className='project-code'>
+            <pre>
+            {`
+      #include <Servo.h>
+      Servo panelServo;
+      int ServoPin = 10;
 
+      int LDRPin_1 = A1;
+      int LDRPin_2 = A2;
+
+      int errorBegin = -10;
+      int errorEnd = 10;
+
+
+      void setup() {
+          Serial.begin(9600);
+
+          panelServo.attach(ServoPin);
+          panelServo.write(100);
+              
+          pinMode(LDRPin_1, INPUT);
+          pinMode(LDRPin_2, INPUT);
+
+          delay(1000);
+      }
+
+      void loop() {
+          int LDRValue_1 = analogRead(LDRPin_1);                                                                                                                     
+          int LDRValue_2 = analogRead(LDRPin_2);
+          int Diff = LDRValue_1 - LDRValue_2;
+          int angle;
+
+          if (Diff <= errorBegin) {
+            angle = map(abs(Diff), abs(errorBegin), 900, 100, 180);
+            panelServo.write(angle);
+          }   else if (Diff >= errorEnd) {
+            angle = map(Diff, errorEnd, 900, 100, 20);
+            panelServo.write(angle);
+          else {
+            angle = 100;
+            panelServo.write(angle);
+          }
+      }
+            `}
+            </pre>
+          </div>
         </div>
-
+        
+        <div className='conclusing'>
+          <h2>
+            I hope you liked this project and learned something new. 
+            Feel free to ask any question and check my Arduino Projects Collection.
+          </h2>
+        </div>
       </div>
     </div>
   );
