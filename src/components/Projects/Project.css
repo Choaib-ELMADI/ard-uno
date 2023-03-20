@@ -218,6 +218,24 @@
     overflow: scroll;
     background: #ccc;
 }
+.app__project-body .code .project-code::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+.app__project-body .code .project-code::-webkit-scrollbar-track {
+    background: transparent;
+}
+.app__project-body .code .project-code::-webkit-scrollbar-thumb {
+    background: orangered;
+    transition: background .2s;
+    border-radius: 10px;
+}
+.app__project-body .code .project-code::-webkit-scrollbar-thumb:hover {
+    background: rgb(255, 0, 0);
+}
+.app__project-body .code .project-code::-webkit-scrollbar-corner {
+    background: orangered;
+}
 
 .app__project-body .conclusing img {
     width: 100%;
