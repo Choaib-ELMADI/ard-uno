@@ -81,10 +81,10 @@
     color: #6b6767;
 }
 
-.app__project-body :is(.model-3d, .parts-3d, .parts-assembly, .circuit, .code) {
+.app__project-body :is(.model-3d, .parts-3d, .parts-assembly, .circuit, .code, .conclusing) {
     padding-top: 3rem;
 }
-.app__project-body :is(.model-3d, .parts-3d, .parts-assembly, .circuit, .code) h3 {
+.app__project-body :is(.model-3d, .parts-3d, .parts-assembly, .circuit, .code, .conclusing) h3 {
     width: 100%;
     max-width: 900px;
     margin: 1rem 0;
@@ -219,12 +219,36 @@
     background: #ccc;
 }
 
-.app__project-body .conclusing h2 {
+.app__project-body .conclusing img {
     width: 100%;
     max-width: 900px;
-    margin-top: 3rem;
+    object-fit: cover;
 }
-
+.app__project-body .conclusing .prev-next {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.app__project-body .conclusing .prev-next h3 {
+    width: max-content;
+    padding: .5rem;
+    border-radius: 6px;
+    background-image: linear-gradient(
+        to bottom right,
+        red, 
+        blue
+    );
+}
+.app__project-body .conclusing .prev-next h3 .project-link {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: .5rem;
+    text-decoration: none;
+}
+.app__project-body .conclusing .prev-next h3 .project-link span:nth-child(1) {
+    text-decoration: underline;
+}
 
 @media screen and (width <= 900px) {
     .app__project-body :is(.model-3d) .imgs-container {
@@ -261,7 +285,7 @@
     }
 }
 
-@media screen and (widht <= 380px) {
+@media screen and (width <= 380px) {
     .app__project-body :is(.model-3d, .parts-3d, .parts-assembly) .imgs-container {
         grid-template-columns: repeat(1, 1fr);
     }

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import './Project.css';
 import { images } from '../../constants/index';
@@ -268,10 +269,22 @@ const SolarPanel = () => {
         </div>
         
         <div className='conclusing'>
-          <h2>
+          <h1>And Now, our project is completed</h1>
+          <h3>
             I hope you liked this project and learned something new. 
             Feel free to ask any question and check my Arduino Projects Collection.
-          </h2>
+          </h3>
+          <img src={ images.arduino_solar_light } alt="solar light tracker" />
+          <div className='prev-next'>
+            <h3><Link className='project-link' to="/projects/selling-machine">
+              <span>Previous Project</span>
+              <span>Selling Machine</span>
+            </Link></h3>
+            <h3><Link className='project-link' to="/projects/drone">
+              <span>Next Project</span>
+              <span>DIY Drone</span>
+            </Link></h3>
+          </div>
         </div>
       </div>
     </div>
