@@ -8,6 +8,7 @@
 }
 
 
+
 .app__project-header {
     margin-bottom: 2rem;
 }
@@ -54,9 +55,24 @@
     border-radius: 12px;
 }
 
-.app__project-body .intro {
+.app__project-project {
+    display: flex;
+    gap: 1rem;
+}
+.app__project-body {
     width: 100%;
-    max-width: 900px;
+    max-width: 1400px;
+}
+.app__project-project .app__project-ads {
+    flex: 1;
+    background: rgb(0, 157, 255);
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.app__project-body .intro {
     margin-bottom: 2rem;
 }
 .app__project-body .steps h2 {
@@ -85,8 +101,6 @@
     padding-top: 3rem;
 }
 .app__project-body :is(.model-3d, .parts-3d, .parts-assembly, .circuit, .code, .conclusing) h3 {
-    width: 100%;
-    max-width: 900px;
     margin: 1rem 0;
 }
 .app__project-body :is(.model-3d) .imgs-container {
@@ -185,14 +199,11 @@
 }
 .app__project-body .parts-3d .thangs img {
     width: 100%;
-    max-width: 900px;
 }
 
 .app__project-body .parts-assembly .imgs-container {
-    width: 100%;
-    max-width: 900px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem;
 }
 .app__project-body .parts-assembly .imgs-container img {
@@ -202,18 +213,12 @@
     border-radius: 12px;
 }
 
-.app__project-body .circuit .project-circuit {
-    width: 100%;
-    max-width: 900px;
-}
 .app__project-body .circuit .project-circuit img {
     width: 100%;
     height: 100%;
 }
 
 .app__project-body .code .project-code {
-    width: 100%;
-    max-width: 900px;
     height: 400px;
     overflow: scroll;
     background: #ccc;
@@ -234,12 +239,11 @@
     background: rgb(255, 0, 0);
 }
 .app__project-body .code .project-code::-webkit-scrollbar-corner {
-    background: orangered;
+    background: #ccc;
 }
 
 .app__project-body .conclusing img {
     width: 100%;
-    max-width: 900px;
     object-fit: cover;
 }
 .app__project-body .conclusing .prev-next {
@@ -249,13 +253,6 @@
 }
 .app__project-body .conclusing .prev-next h3 {
     width: max-content;
-    padding: .5rem;
-    border-radius: 6px;
-    background-image: linear-gradient(
-        to bottom right,
-        red, 
-        blue
-    );
 }
 .app__project-body .conclusing .prev-next h3 .project-link {
     display: flex;
@@ -263,28 +260,36 @@
     text-align: center;
     gap: .5rem;
     text-decoration: none;
+    padding: .5rem;
+    border-radius: 6px;
+    background-image: linear-gradient(
+        to bottom right,
+        rgb(0, 76, 255), 
+        rgb(255, 0, 230)
+    );
+    background-clip: text;
+    color: transparent;
 }
 .app__project-body .conclusing .prev-next h3 .project-link span:nth-child(1) {
     text-decoration: underline;
 }
 
-@media screen and (width <= 900px) {
-    .app__project-body :is(.model-3d) .imgs-container {
-        grid-template-columns: repeat(3, 1fr);
+@media screen and (width <= 1650px) {
+    .app__project-project {
+        flex-direction: column-reverse;
     }
-
-    .app__project-body .parts-3d .imgs-container {
+}
+@media screen and (width <= 900px) {
+    .app__project-body :is(.model-3d, .parts-3d) .imgs-container {
         grid-template-columns: repeat(3, 1fr);
     }
 }
-
 @media screen and (width <= 700px) {
     .app__project-body .parts-3d .imgs-container .item :is(.number, .icon) {
         width: 30px;
         height: 30px;
     }
 }
-
 @media screen and (width <= 600px) {
     .app__project-main {
         padding: 5rem 1rem 1rem 1rem;
@@ -294,15 +299,10 @@
         font-size: 27px;
     }
 
-    .app__project-body :is(.model-3d) .imgs-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .app__project-body .parts-3d .imgs-container {
+    .app__project-body :is(.model-3d, .parts-3d) .imgs-container {
         grid-template-columns: repeat(2, 1fr);
     }
 }
-
 @media screen and (width <= 380px) {
     .app__project-body :is(.model-3d, .parts-3d, .parts-assembly) .imgs-container {
         grid-template-columns: repeat(1, 1fr);
