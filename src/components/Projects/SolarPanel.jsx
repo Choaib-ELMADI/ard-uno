@@ -3,54 +3,7 @@ import { Link } from 'react-router-dom';
 
 import './Project.css';
 import { images } from '../../constants/index';
-
-const model_3d = [
-  {
-    img: images.solar_panel_1,
-    link: "https://get-3d.netlify.app/models/solar-light-follower",
-  },
-  {
-    img: images.servo_motor,
-    link: "https://get-3d.netlify.app/models/micro-servo-sg90",
-  },
-  {
-    img: images.solar_panel_2,
-    link: "https://get-3d.netlify.app/models/solar-light-follower",
-  },
-];
-const parts_3d = [
-  { 
-    img: images.solar_panel_base,
-    title: 'Panel Base',
-    link: 'https://thangs.com/mythangs/file/799776',
-  },
-  { 
-    img: images.solar_panel_base_done,
-    title: 'Panel Base',
-    link: 'https://thangs.com/mythangs/file/799776',
-  },
-  { 
-    img: images.solar_panel_holders,
-    title: 'Panel Stent',
-    link: 'https://thangs.com/mythangs/file/799776',
-  },
-  { 
-    img: images.solar_panel_holders_done,
-    title: 'Panel Stent',
-    link: 'https://thangs.com/mythangs/file/799776',
-  },
-  { 
-    img: images.solar_panel_ldrs,
-    title: 'Servo / LDRs',
-    link: 'https://thangs.com/mythangs/file/800047',
-  },
-  { 
-    img: images.solar_panel_servo_mounted,
-    title: 'Servo Motor',
-    link: 'https://thangs.com/mythangs/file/800016',
-  },
-];
-
+import { parts_3d, model_3d } from '../../data'
 
 
 
