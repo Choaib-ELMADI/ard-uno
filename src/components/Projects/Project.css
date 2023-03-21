@@ -103,7 +103,7 @@
 .app__project-body :is(.model-3d, .parts-3d, .parts-assembly, .circuit, .code, .conclusing) h3 {
     margin: 1rem 0;
 }
-.app__project-body :is(.model-3d) .imgs-container {
+.app__project-body :is(.model-3d, .parts-3d) .imgs-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 1rem;
@@ -128,11 +128,6 @@
     color: var(--our__color);
 }
 
-.app__project-body .parts-3d .imgs-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 1rem;
-}
 .app__project-body .parts-3d .imgs-container .item {
     position: relative;
     max-height: 300px;
@@ -273,6 +268,30 @@
 .app__project-body .conclusing .prev-next h3 .project-link span:nth-child(1) {
     text-decoration: underline;
 }
+.app__project-body .conclusing .support {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    padding: 1rem;
+    background: rgb(0, 157, 255);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.app__project-body .conclusing .support .icons {
+    display: flex;
+    gap: 1.5rem;
+}
+.app__project-body .conclusing .support .icons a {
+    width: 35px;
+    height: 35px;
+}
+.app__project-body .conclusing .support .icons a .icon {
+    width: 100%;
+    height: 100%;
+}
 
 @media screen and (width <= 1300px) {
     .app__project-project {
@@ -299,12 +318,7 @@
         font-size: 27px;
     }
 
-    .app__project-body :is(.model-3d, .parts-3d) .imgs-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-@media screen and (width <= 380px) {
     .app__project-body :is(.model-3d, .parts-3d, .parts-assembly) .imgs-container {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 }
