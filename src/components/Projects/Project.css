@@ -61,7 +61,7 @@
 }
 .app__project-body {
     width: 100%;
-    max-width: 1400px;
+    max-width: 1000px;
 }
 .app__project-project .app__project-ads {
     flex: 1;
@@ -274,7 +274,7 @@
     text-decoration: underline;
 }
 
-@media screen and (width <= 1650px) {
+@media screen and (width <= 1300px) {
     .app__project-project {
         flex-direction: column-reverse;
     }
