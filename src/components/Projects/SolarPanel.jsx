@@ -21,7 +21,7 @@ const support = [
   },
   {
     name: "Instagram",
-    icon: <AiFillInstagram className='icon' fill='orangered' />,
+    icon: <AiFillInstagram className='icon' fill='white' />,
     link: "https://www.instagram.com/choaib_elmadi",
   },
 ]

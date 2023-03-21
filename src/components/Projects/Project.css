@@ -257,6 +257,7 @@
     text-decoration: none;
     padding: .5rem;
     border-radius: 6px;
+    border: 2px rgb(0, 76, 255) solid;
     background-image: linear-gradient(
         to bottom right,
         rgb(0, 76, 255), 
@@ -266,7 +267,7 @@
     color: transparent;
 }
 .app__project-body .conclusing .prev-next h3 .project-link span:nth-child(1) {
-    text-decoration: underline;
+    text-decoration: underline 2px rgb(255, 0, 230);
 }
 .app__project-body .conclusing .support {
     width: 100%;
