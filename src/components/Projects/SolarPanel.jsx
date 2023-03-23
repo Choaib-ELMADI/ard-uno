@@ -198,6 +198,15 @@ const SolarPanel = () => {
             <div className='project-code'>
               <pre>
               {`
+        /*
+
+                Solar Light Tracker Code
+                by Choaib ELMADI   https://choaib-elmadi.netlify.app
+
+                give it a star :   github.com/Choaib-ELMADI
+        
+        */
+
         #include <Servo.h>
         Servo panelServo;
         int ServoPin = 10;
