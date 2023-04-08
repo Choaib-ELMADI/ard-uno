@@ -55,6 +55,7 @@
 .app__create-what .what {
     width: 100%;
     background: rgb(134,221,248);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 8px;
     position: sticky;
     top: 6.5rem;
     border-radius: 10px;
@@ -93,7 +94,7 @@
 }
 
 .what .what-icon {
-    width: 80px;
+    width: 70px;
     aspect-ratio: 1;
     margin-bottom: 1rem;
 }

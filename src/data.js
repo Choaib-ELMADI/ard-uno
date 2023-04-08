@@ -47,7 +47,7 @@ export const services = [
     },
     {
         icon  : images.website,
-        title : 'Website Project',
+        title : 'Project Website',
         desc  : 'Building a website for the project to share with friends.',
     }
 ];
@@ -93,41 +93,25 @@ export const works = [
 
 export const awards = [
     {
-        title: 'This is our first award',
-        year : 2018
-    },
-    {
-        title: 'This is our second award',
-        year : 2019
-    },
-    {
-        title: 'This is the third award',
-        year : 2019
-    },
-    {
-        title: 'This is the fourth award',
-        year : 2021
-    },
-    {
-        title: 'This is our latest award',
-        year : 2022
+        title: 'No awards yet',
+        year : '_ _ _'
     },
 ];
 
 export const creates = [
     {
         title: 'Concept',
-        desc : 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.',
+        desc : 'Designing and building electronic devices, circuits, and systems that power our modern world.',
         icon : images.creates_1,
     },
     {
         title: 'Pexel Perfect',
-        desc : 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.',
+        desc : 'Designing, analysing, and manufacturing mechanical systems and devices.',
         icon : images.creates_2,
     },
     {
         title: 'Innovative',
-        desc : 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.',
+        desc : 'Introducing new ideas, products, or methods that create value and drive progress in society.',
         icon : images.creates_3,
     },
 ];
