@@ -18,9 +18,9 @@ const Header = () => {
       <div className='app__header-top'>
         <h1>Arduino & <br/>Microcontrollers.</h1>
         <p>
-          Lorem, ipsum dolor sit amet adipisicing elit. 
-          Lorem ipsum dolor sit. 
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        <b>Ard-Uno</b> is a platform that enables hobbyists, 
+        designers, and engineers to create a wide range of projects, from simple 
+        LED displays to complex robotic systems.
         </p>
       </div>
       <div className="app__header-bottom">
@@ -28,7 +28,7 @@ const Header = () => {
           <img src={ images.banner } alt="banner" />
         </div>
         <div className="app__header-last">
-          <small>Lorem ipsum dolor sit amet consectetur adipisicing.</small>
+          <small>Arduino Uno R3 microcontroller board, 14 digital input/output pins, 6 analog inputs.</small>
         </div>
         <div className="app__header-spons">
           {
