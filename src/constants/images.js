@@ -2,6 +2,7 @@ import banner             from '../assets/banner.webp';
 
 import arduino_logo       from '../assets/arduino-logo.png';
 import easyEDA_logo       from '../assets/EasyEDA.png';
+import pcbway_logo        from '../assets/pcbway.png';
 import arduinoPlanet_logo from '../assets/arduinoPlanet.png.webp';
 import jlcpcb_logo        from '../assets/jlcpcb-logo.webp';
 
@@ -50,6 +51,7 @@ const images = {
 
     arduino_logo,
     easyEDA_logo,
+    pcbway_logo,
     arduinoPlanet_logo,
     jlcpcb_logo,
 

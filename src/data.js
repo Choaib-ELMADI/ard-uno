@@ -21,6 +21,11 @@ export const sponsors = [
         name: 'jlcPCB',
         link: 'https://jlcpcb.com/',
         img : images.jlcpcb_logo,
+    },
+    {
+        name: 'pcbWay',
+        link: 'https://pcbway.com/',
+        img : images.pcbway_logo,
     }
 ];
 
