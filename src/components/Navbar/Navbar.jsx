@@ -60,6 +60,7 @@ const Navbar = () => {
                                             key={ `project-${ i }` } 
                                             to={ `/projects/${ w.title.toLowerCase() }` }
                                             onClick={ () => setOpen(false) }
+                                            className='project-link'
                                         >
                                             <h4>{ w.title }</h4>
                                         </Link>

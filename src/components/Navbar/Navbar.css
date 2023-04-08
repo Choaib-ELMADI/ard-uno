@@ -131,6 +131,14 @@
     text-decoration: none;
 }
 
+.projects-links-container .project-link {
+    transition: .2s;
+}
+
+.projects-links-container .project-link:hover {
+    color: var(--our__color);
+}
+
 @media screen and (width > 900px) {
     .toggle-navbar,
     .app__navbar-social {
