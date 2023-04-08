@@ -12,7 +12,7 @@ const About = () => {
             <small><b>Why Ard-Uno</b></small>
         </div>
         <div className="app__about-left">
-            <h2>
+            <h2 style={{marginBottom: '.75rem'}}>
                 We create stunning digital 
                 <br/>
                 experiences that people will love.
@@ -20,16 +20,16 @@ const About = () => {
                 On all platforms.
             </h2>
             <p>
-                Lorem ipsum dolor, sit amet consectetur 
-                adipisicing elit. Dolor accusamus vero, 
-                doloremque quasi odio laudantium.
-                Culpa voluptates optio modi quas.
+                <b>Our Arduino projects</b> are designed to 
+                inspire and educate, providing you with 
+                a fun and rewarding way to learn electronics 
+                and programming.
             </p>
             <p>
-                Lorem ipsum dolor, sit amet consectetur 
-                adipisicing elit. Dolor accusamus vero, 
-                doloremque quasi odio laudantium.
-                Culpa voluptates optio modi quas.
+                <b>With our collection</b> of Arduino projects, 
+                you'll be able to build everything from simple 
+                circuits to complex robots, all while honing 
+                your skills and unleashing your creativity.
             </p>
             <div className="app__about-awards">
                 {
