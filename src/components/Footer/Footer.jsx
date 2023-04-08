@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
+import emailjs from '@emailjs/browser';
 
 import './Footer.css';
 import { AiFillLinkedin, AiFillGithub, AiFillInstagram, AiFillFacebook } from 'react-icons/ai';
@@ -8,6 +9,38 @@ import { AiFillLinkedin, AiFillGithub, AiFillInstagram, AiFillFacebook } from 'r
 
 const Footer = () => {
   const [sub, setSub] = useState(false);
+  const formRef = useRef();
+  const [email, setEmail] = useState('');
+
+  const handleChange = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handleForm = (e) => {
+    e.preventDefault();
+    setSub(false);
+
+    emailjs.send(
+      'service_rbyqrrj', 
+      'template_z4t83ye', 
+      {
+        to_name: 'User',
+        from_email: email,
+        to_email: 'choaibelmadi.js@gmail.com',
+        message: 'Thanks for subscribing to tha Ard-Uno newsletter. We hope you get the best experience',
+      }, 
+      'BzsAxBDR2VcTFgclc'
+    )
+    .then(() => {
+      setEmail('');
+      setSub(true);
+      alert('Thanks for subscribing.');
+    }, (error) => {
+      setSub(false);
+      console.log(error);
+      alert('Something went wrong.');
+    });
+  };
 
   return (
     <div className='app__footer'>
@@ -20,12 +53,17 @@ const Footer = () => {
           </h4>
           { !sub &&
           <form 
-            onSubmit={ (e) => {
-              e.preventDefault();
-              setSub(true);
-           } } 
+            ref={ formRef }
+            onSubmit={ (e) => handleForm(e) }
           >
-            <input type="email" placeholder='Enter your email' required />
+            <input 
+              type="email" 
+              name="email" 
+              placeholder='Enter your email' 
+              value={ email }
+              onChange={ (e) => handleChange(e) }
+              required 
+            />
             <button type="submit">Subscribe</button>
           </form>
           }
