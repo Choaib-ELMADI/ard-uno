@@ -24,6 +24,7 @@ const Footer = () => {
       'service_rbyqrrj', 
       'template_z4t83ye', 
       {
+        from_name: email,
         to_name: 'User',
         from_email: email,
         to_email: 'choaibelmadi.js@gmail.com',
