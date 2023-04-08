@@ -33,6 +33,7 @@
     width: 100%;
     max-width: 500px;
     border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
     padding: 1rem 2rem;
     background: rgb(197, 197, 197);
     position: sticky;
@@ -40,7 +41,7 @@
 }
 
 .app__services-main .card .icon {
-    width: 80px;
+    width: 70px;
     aspect-ratio: 1;
     margin-bottom: 1rem;
 }

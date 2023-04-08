@@ -13,9 +13,8 @@ const Services = () => {
             <small><b>Our Services</b></small>
             <h1>Your next <br/>Innovation.</h1>
             <p>
-              Lorem ipsum dolor, sit amet consectetur 
-              adipisicing elit. Corporis accusamus 
-              voluptas rerum.
+            Innovation drives progress by transforming 
+            ideas into reality through creativity and experimentation.
             </p>
           </div>
         </div>
