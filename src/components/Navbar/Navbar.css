@@ -7,6 +7,7 @@
     padding: .75rem 2rem;
     transition: background .2s;
     z-index: 999;
+    user-select: none;
 }
 
 .app__navbar.active {
@@ -86,10 +87,11 @@
 .projects-links {
     position: relative;
     cursor: pointer;
+    transition: .2s;
 }
 
 .projects-links .triangle-icon {
-    transition: all .2s;
+    transition: transform .2s;
 }
 
 .app__navbar.active .projects-links:hover {
@@ -102,7 +104,7 @@
 
 .projects-links.active .triangle-icon {
     transform: rotateZ(180deg);
-}
+} 
 
 .projects-links-container {
     position: absolute;
