@@ -13,6 +13,7 @@ const main = ['Services', 'Work', 'About', 'Testimonials'];
 const Navbar = () => {
     const [open, setOpen] = useState(false);
     const [back, setBack] = useState(false);
+    const [vueProjects, setVueProjects] = useState(false);
 
     const scrolling = () => {
         if (window.scrollY >= 30) {
@@ -51,15 +52,20 @@ const Navbar = () => {
                                 </li>
                             ))
                         }
-                        <div className='projects-links'>
-                            <h4>Pages <BsFillTriangleFill className='triangle-icon' fontSize={ 10 } /></h4>
+                        <div className={ `${ vueProjects ? 'projects-links active' : 'projects-links' }` }>
+                            <h4
+                                onClick={ () => setVueProjects(!vueProjects) }
+                            >Pages <BsFillTriangleFill className='triangle-icon' fontSize={ 10 } /></h4>
                             <div className="projects-links-container">
                                 {
                                     works.slice(0, 3).map((w, i) => (
                                         <Link 
                                             key={ `project-${ i }` } 
                                             to={ `/projects/${ w.title.toLowerCase() }` }
-                                            onClick={ () => setOpen(false) }
+                                            onClick={ () => {
+                                                setOpen(false);
+                                                setVueProjects(false);
+                                            }}
                                             className='project-link'
                                         >
                                             <h4>{ w.title }</h4>

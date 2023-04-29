@@ -100,7 +100,7 @@
     color: var(--our__color);
 }
 
-.projects-links:hover .triangle-icon {
+.projects-links.active .triangle-icon {
     transform: rotateZ(180deg);
 }
 
@@ -120,7 +120,7 @@
     z-index: 10;
 }
 
-.projects-links:hover  .projects-links-container {
+.projects-links.active  .projects-links-container {
     width: max-content;
     opacity: 1;
     visibility: visible;
@@ -132,7 +132,7 @@
 }
 
 .projects-links-container .project-link {
-    transition: .2s;
+    transition: .3s;
 }
 
 .projects-links-container .project-link:hover {
