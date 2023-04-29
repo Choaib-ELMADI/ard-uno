@@ -1,5 +1,5 @@
 import { images } from "./constants/index";
-import { SolarPanel, DiyCar, Drone, RobotArm, Selling, Watering } from "./components/index";
+import { SolarPanel, DiyCar, Drone, RobotArm, Selling, Watering, RadioControl } from "./components/index";
 
 export const sponsors = [
     {
@@ -59,6 +59,15 @@ export const works = [
         img  : images.arduino_solar_light,
         link : 'solar-panel',
     },
+    {
+        title: 'Radio-Control',
+        desc : 'RC Radio Controller',
+        img  : images.arduino_solar_light,
+        link : 'radio-control',
+    },
+
+
+
     {
         title: 'Drone',
         desc : 'Arduino based drone',
@@ -136,6 +145,13 @@ export const routes = [
         path   : '/projects/solar-panel',
         element: <SolarPanel />,
     },
+    {
+        path   : '/projects/radio-control',
+        element: <RadioControl />,
+    },
+
+
+    
     {
         path   : '/projects/diy-car',
         element: <DiyCar />,

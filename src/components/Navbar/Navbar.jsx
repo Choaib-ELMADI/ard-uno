@@ -55,7 +55,7 @@ const Navbar = () => {
                             <h4>Pages <BsFillTriangleFill className='triangle-icon' fontSize={ 10 } /></h4>
                             <div className="projects-links-container">
                                 {
-                                    works.map((w, i) => (
+                                    works.slice(0, 3).map((w, i) => (
                                         <Link 
                                             key={ `project-${ i }` } 
                                             to={ `/projects/${ w.title.toLowerCase() }` }
