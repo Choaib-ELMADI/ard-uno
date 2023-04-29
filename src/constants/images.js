@@ -30,6 +30,7 @@ import thangs_logo               from '../assets/home/thangs_logo.png';
 
 /* Radio Control */
 import rc_radio_control from '../assets/radioControl/rc__right-side.jpg';
+import rc_received_data from '../assets/radioControl/rc__received-data.jpg';
 
 import arduino_drone      from '../assets/drone/arduino-drone.jpg';
 import arduino_arm        from '../assets/arm/arduino-arm.jpg';
@@ -82,6 +83,7 @@ const images = {
 
     /* Radio Control */
     rc_radio_control,
+    rc_received_data,
 
     arduino_drone,
     arduino_arm,

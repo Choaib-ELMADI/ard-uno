@@ -62,7 +62,7 @@ export const works = [
     {
         title: 'Radio-Control',
         desc : 'RC Radio Controller',
-        img  : images.arduino_solar_light,
+        img  : images.rc_received_data,
         link : 'radio-control',
     },
 
