@@ -91,7 +91,7 @@
     }
 
     .app__works-work {
-        height: 50vh;
+        aspect-ratio: 1.3;
     }
 
     .app__works-work img {
@@ -100,5 +100,19 @@
 
     .app__work-info h1 {
         font-size: 24px;
+    }
+}
+
+@media screen and (width <= 360px) {
+    .app__works-work {
+        aspect-ratio: 1.1;
+    }
+
+    .app__work-info h1 {
+        font-size: 20px;
+    }
+
+    .app__work-info p {
+        font-size: 14px;
     }
 }
