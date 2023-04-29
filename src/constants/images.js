@@ -1,48 +1,48 @@
-import banner             from '../assets/banner.webp';
+import banner             from '../assets/home/banner.webp';
 
-import arduino_logo       from '../assets/arduino-logo.png';
-import easyEDA_logo       from '../assets/EasyEDA.png';
-import pcbway_logo        from '../assets/pcbway.png';
-import arduinoPlanet_logo from '../assets/arduinoPlanet.png.webp';
-import jlcpcb_logo        from '../assets/jlcpcb-logo.webp';
+import arduino_logo       from '../assets/home/arduino-logo.png';
+import easyEDA_logo       from '../assets/home/EasyEDA.png';
+import pcbway_logo        from '../assets/home/pcbway.png';
+import arduinoPlanet_logo from '../assets/home/arduinoPlanet.png.webp';
+import jlcpcb_logo        from '../assets/home/jlcpcb-logo.webp';
 
-import coding             from '../assets/services-coding.png';
-import electro            from '../assets/services-electro.png';
-import testing            from '../assets/services-testing.png';
-import website            from '../assets/services-website.png';
+import coding             from '../assets/home/services-coding.png';
+import electro            from '../assets/home/services-electro.png';
+import testing            from '../assets/home/services-testing.png';
+import website            from '../assets/home/services-website.png';
 
 /* Solar Light Detector */
-import arduino_solar_light       from '../assets/arduino_solar_light.jpg'; 
-import arduino_solar_light_small from '../assets/arduino_solar_light_small.jpg';
-import solar_panel_1             from '../assets/solar-panel-1.jpg';
-import servo_motor               from '../assets/servo-motor-model.jpg';
-import solar_panel_2             from '../assets/solar-panel-2.jpg';
-import solar_panel_base          from '../assets/solar-panel-base.jpg';
-import solar_panel_base_done     from '../assets/solar-panel-base-done.jpg';
-import solar_panel_holders       from '../assets/solar-panel-holders.jpg';
-import solar_panel_holders_done  from '../assets/solar-panel-holders-done.jpg';
-import solar_panel_ldrs          from '../assets/solar-panel-ldrs.jpg';
-import solar_panel_servo_mounted from '../assets/solar-panel-servo-mounted.jpg';
-import thangs_base_panel         from '../assets/thangs_base_panel.png';
-import thangs_logo               from '../assets/thangs_logo.png';
-import solar_panel_circuit       from '../assets/solar-panel-circuit.png';
-import solar_panel_schematic     from '../assets/solar-panel-schematic.png';
+import arduino_solar_light       from '../assets/solarPanel/arduino_solar_light.jpg'; 
+import arduino_solar_light_small from '../assets/solarPanel/arduino_solar_light_small.jpg';
+import solar_panel_1             from '../assets/solarPanel/solar-panel-1.jpg';
+import servo_motor               from '../assets/solarPanel/servo-motor-model.jpg';
+import solar_panel_2             from '../assets/solarPanel/solar-panel-2.jpg';
+import solar_panel_base          from '../assets/solarPanel/solar-panel-base.jpg';
+import solar_panel_base_done     from '../assets/solarPanel/solar-panel-base-done.jpg';
+import solar_panel_holders       from '../assets/solarPanel/solar-panel-holders.jpg';
+import solar_panel_holders_done  from '../assets/solarPanel/solar-panel-holders-done.jpg';
+import solar_panel_ldrs          from '../assets/solarPanel/solar-panel-ldrs.jpg';
+import solar_panel_servo_mounted from '../assets/solarPanel/solar-panel-servo-mounted.jpg';
+import thangs_base_panel         from '../assets/solarPanel/thangs_base_panel.png';
+import solar_panel_circuit       from '../assets/solarPanel/solar-panel-circuit.png';
+import solar_panel_schematic     from '../assets/solarPanel/solar-panel-schematic.png';
+import thangs_logo               from '../assets/home/thangs_logo.png';
 
-import arduino_drone      from '../assets/arduino-drone.jpg';
-import arduino_arm        from '../assets/arduino-arm.jpg';
-import arduino_car        from '../assets/arduino-car.jpg';
-import arduino_watering   from '../assets/arduino-watering.jpg';
-import arduino_selling    from '../assets/arduino-selling.png';
+import arduino_drone      from '../assets/drone/arduino-drone.jpg';
+import arduino_arm        from '../assets/arm/arduino-arm.jpg';
+import arduino_car        from '../assets/car/arduino-car.jpg';
+import arduino_watering   from '../assets/watering/arduino-watering.jpg';
+import arduino_selling    from '../assets/sellingMachine/arduino-selling.png';
 
-import creates_1          from '../assets/concept.png';
-import creates_2          from '../assets/perfect.png';
-import creates_3          from '../assets/innovative.png';
+import creates_1          from '../assets/home/concept.png';
+import creates_2          from '../assets/home/perfect.png';
+import creates_3          from '../assets/home/innovative.png';
 
-import testimonials_intro from '../assets/testimonials-intro.jpg';
+import testimonials_intro from '../assets/home/testimonials-intro.jpg';
 
-import quote              from '../assets/quote.png';
+import quote              from '../assets/home/quote.png';
 
-import create_banner      from '../assets/create-banner.png';
+import create_banner      from '../assets/home/create-banner.png';
 
 import profile            from '../assets/profile.jpg';
 
