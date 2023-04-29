@@ -30,15 +30,15 @@ const support = [
 
 const RadioControl = () => {
   return (
-    <div className='app__project-main'>
+    <div className='app__project-main rc'>
       <div style={{ textAlign: 'center' }} className='app__project-header'>
-          <h1>DIY Arduino Solar Light Tracker</h1>
+          <h1>DIY Arduino Radio Controller</h1>
           <div className='app__project-header-creator'>
             <img src={ images.profile } alt="Choaib ELMADI" />
             <h4>By <a href="https://choaib-elmadi.netlify.app/" target="_blank" rel="noreferrer">Choaib ELMADI</a></h4>
           </div>
           <div className='app__project-banner'>
-            <img src={ images.arduino_solar_light } alt="arduino solar panel" />
+            <img src={ images.rc_radio_control } alt="arduino radio control" />
           </div>
       </div>
       <div className='app__project-project'>

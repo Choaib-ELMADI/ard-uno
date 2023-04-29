@@ -28,6 +28,9 @@ import solar_panel_circuit       from '../assets/solarPanel/solar-panel-circuit.
 import solar_panel_schematic     from '../assets/solarPanel/solar-panel-schematic.png';
 import thangs_logo               from '../assets/home/thangs_logo.png';
 
+/* Radio Control */
+import rc_radio_control from '../assets/radioControl/rc__right-side.jpg';
+
 import arduino_drone      from '../assets/drone/arduino-drone.jpg';
 import arduino_arm        from '../assets/arm/arduino-arm.jpg';
 import arduino_car        from '../assets/car/arduino-car.jpg';
@@ -76,6 +79,9 @@ const images = {
     thangs_logo,
     solar_panel_circuit,
     solar_panel_schematic,
+
+    /* Radio Control */
+    rc_radio_control,
 
     arduino_drone,
     arduino_arm,
