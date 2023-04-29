@@ -61,78 +61,33 @@ const RadioControl = () => {
           <div className='steps'>
             <h2>So, these are the steps we're going to follow to complete this project :</h2>
             <ol>
-              <h3><li><a href="#project-3d-model">Arduino Light Tracker 3D Model</a></li></h3>
-              <h3><li><a href="#project-3d-parts">3D Printing The Parts</a></li></h3>
-              <h3><li><a href="#project-parts-assembly">Assembling The Panel Parts</a></li></h3>
               <h3><li><a href="#project-circuit">Arduino Circuit Diagram</a></li></h3>
+              <h3><li><a href="#soldering-electronics">Soldering & Electronics</a></li></h3>
               <h3><li><a href="#project-code">Arduino Code</a></li></h3>
             </ol>
           </div>
 
-          <div id="project-3d-model" className='model-3d'>
-            <h1>Light Tracker 3D Model</h1>
-            <h3>
-              To begin with, I designed the light tracker using Solidworks 3D 
-              modeling software. It consist of the Base, the Panel, a Servo Motor 
-              SG90 and two Photoresistor LDR (Light Dependent Resistor).
-            </h3>
-            <div className='imgs-container'>
-              {
-                model_3d.map((item, i) => (
-                  <div className='item' key={ `item-${ i }` }>
-                    <div 
-                      className='image'
-                    >
-                      <img src={ item.img } alt="light tracker 3d model" />
-                    </div>
-                    <h4><a className='view' href={ item.link } target='_blank' rel='noreferrer'>View / Download</a></h4>
-                  </div>
-                ))
-              }
-            </div>
-          </div>
-
-          <div id="project-3d-parts" className='parts-3d'>
-            <h1>3D Printing the Solar Panel</h1>
-            <h3>
-              Currently, I don't have a 3d printing machine. 
-              But I'm looking forward to buying one. 
-              So we are just going to use some Cardboard.
-            </h3>
-            <div className='imgs-container'>
-              {
-                parts_3d.map((item, i) => (
-                  <div className='item' key={ `part-${ i }` }>
-                    <img src={ item.img } alt="light tracker 3d parts" />
-                    <div className='item-overlay'>
-                        <h3>{ item.title }</h3>
-                    </div>
-                    <span className='number'><h5>{ i+1 }</h5></span>
-                    <span className='icon'>
-                      <a 
-                        href={ item.link } 
-                        target='_blank' 
-                        rel='noreferrer'
-                      >
-                        <img src={ images.thangs_logo } alt="thangs logo" />
-                      </a>
-                    </span>
-                  </div>
-                ))
-              }
-            </div>
-            <div className='thangs'>
+          <div id="project-circuit" className='circuit'>
+              <h1>Arduino Solar Panel Circuit Diagram</h1>
               <h3>
-                You can find and download this 3D model, 
-                as well as explore it in your browser on Thangs:
+                The next stage is connecting the electronics. 
+                The circuit diagram of this project is actually quite simple. 
+                We just need an Arduino board and a Servo motor to move the panel. 
+                And two Photoresistor.
               </h3>
-              <a href='https://thangs.com/designer/Choaib.ELMADI' target='_blank' rel='noreferrer'>
-                <img src={ images.thangs_base_panel } alt="thangs solar base" />
-              </a>
-            </div>
+              <div className='project-circuit'>
+                <img src={ images.solar_panel_circuit } alt="arduino circuit" />
+              </div>
+              <h3>
+                And because the servo motor needs 5V, 
+                and the arduino can't handle this we must 
+                provide an external power source. 
+                In our case, it's OK because we only have one servo. <br />
+                Once we connected eveything, we can move on to programming the arduino.
+              </h3>
           </div>
 
-          <div id="project-parts-assembly" className='parts-assembly'>
+          <div id="soldering-electronics" className='parts-assembly'>
             <h1>Assembling the Solar Light Tracker</h1>
             <h3>
               Now, we are ready to assemble the solar panel. 
@@ -163,26 +118,6 @@ const RadioControl = () => {
             <h3> 
               And Now, our solar light detector is fully assembled and ready.
             </h3>
-          </div>
-
-          <div id="project-circuit" className='circuit'>
-              <h1>Arduino Solar Panel Circuit Diagram</h1>
-              <h3>
-                The next stage is connecting the electronics. 
-                The circuit diagram of this project is actually quite simple. 
-                We just need an Arduino board and a Servo motor to move the panel. 
-                And two Photoresistor.
-              </h3>
-              <div className='project-circuit'>
-                <img src={ images.solar_panel_circuit } alt="arduino circuit" />
-              </div>
-              <h3>
-                And because the servo motor needs 5V, 
-                and the arduino can't handle this we must 
-                provide an external power source. 
-                In our case, it's OK because we only have one servo. <br />
-                Once we connected eveything, we can move on to programming the arduino.
-              </h3>
           </div>
 
           <div id="project-code" className='code'>
