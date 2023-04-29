@@ -44,11 +44,19 @@ const RadioControl = () => {
       <div className='app__project-project'>
         <div className='app__project-body'>
           <h3 className='intro'>
-            An Arduino solar light tracker is a device that uses an Arduino
-            microcontroller to measure the amount of light in the surrounding 
-            environment and provide feedback based on the measured light levels. 
-            The device can be designed to trigger certain actions, such as turning 
-            on or off a solar-powered light, depending on the amount of light available.
+            Introducing our <span className='keyword'>Arduino-based radio controller</span>, designed to make remote control of your robotic projects a breeze! 
+            This innovative controller utilizes an Arduino Nano to read data from two joysticks and wirelessly transmit it to 
+            another Arduino Nano, via an NRF24L01 module.
+            <br />
+            <br />
+            <span className='keyword'>The Arduino Nano</span> is a small, powerful microcontroller that's perfect for this type of project. It's easy to program 
+            and can be customized to meet your specific needs. With its compact size, you can easily take it with you wherever 
+            you go, making it ideal for controlling robots, drones, or other projects from a distance.
+            <br />
+            <br />
+            <sapn className='keyword'>The NRF24L01 module</sapn> is a wireless communication module that allows you to send and receive data over a distance 
+            of up to 1000 meters. This makes it perfect for controlling your robot from a distance, without the need for messy 
+            cables or wires.
           </h3>
           <div className='steps'>
             <h2>So, these are the steps we're going to follow to complete this project :</h2>
