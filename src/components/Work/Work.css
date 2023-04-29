@@ -95,7 +95,7 @@
     }
 
     .app__works-work img {
-        object-fit: cover;
+        object-fit: contain;
     }
 
     .app__work-info h1 {

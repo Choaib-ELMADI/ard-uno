@@ -58,12 +58,14 @@ export const works = [
         desc : 'Solar light detector',
         img  : images.solar_panel_project_cover,
         link : 'solar-panel',
+        back: '#adff2f',
     },
     {
         title: 'Radio-Control',
         desc : 'RC Radio Controller',
         img  : images.rc_project_cover,
         link : 'radio-control',
+        back: '#77cef3',
     },
 
 
@@ -73,30 +75,35 @@ export const works = [
         desc : 'Arduino based drone',
         img  : images.coming_soon_project_cover,
         link : 'drone',
+        back: '#f36430',
     },
     {
         title: 'Robot-Arm',
         desc : 'Robotic gripper arm',
         img  : images.coming_soon_project_cover,
-        link : 'robot-arm'
+        link : 'robot-arm',
+        back: '#f36430',
     },
     {
         title: 'DIY-Car',
         desc : 'Wireless control car',
         img  : images.coming_soon_project_cover,
-        link : 'diy-car'
+        link : 'diy-car',
+        back: '#f36430',
     },
     {
         title: 'Watering-System',
         desc : 'Automatic watering system',
         img  : images.coming_soon_project_cover,
-        link : 'watering-system'
+        link : 'watering-system',
+        back: '#f36430',
     },
     {
         title: 'Selling-Machine',
         desc : 'Automatic selling machine',
         img  : images.coming_soon_project_cover,
-        link : 'selling-machine'
+        link : 'selling-machine',
+        back: '#f36430',
     },
 ];
 
