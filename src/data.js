@@ -56,13 +56,13 @@ export const works = [
     {
         title: 'Solar-Panel',
         desc : 'Solar light detector',
-        img  : images.arduino_solar_light,
+        img  : images.solar_panel_project_cover,
         link : 'solar-panel',
     },
     {
         title: 'Radio-Control',
         desc : 'RC Radio Controller',
-        img  : images.rc_received_data,
+        img  : images.rc_project_cover,
         link : 'radio-control',
     },
 
@@ -71,31 +71,31 @@ export const works = [
     {
         title: 'Drone',
         desc : 'Arduino based drone',
-        img  : images.arduino_drone,
+        img  : images.coming_soon_project_cover,
         link : 'drone',
     },
     {
         title: 'Robot-Arm',
         desc : 'Robotic gripper arm',
-        img  : images.arduino_arm,
+        img  : images.coming_soon_project_cover,
         link : 'robot-arm'
     },
     {
         title: 'DIY-Car',
         desc : 'Wireless control car',
-        img  : images.arduino_car,
+        img  : images.coming_soon_project_cover,
         link : 'diy-car'
     },
     {
         title: 'Watering-System',
         desc : 'Automatic watering system',
-        img  : images.arduino_watering,
+        img  : images.coming_soon_project_cover,
         link : 'watering-system'
     },
     {
         title: 'Selling-Machine',
         desc : 'Automatic selling machine',
-        img  : images.arduino_selling,
+        img  : images.coming_soon_project_cover,
         link : 'selling-machine'
     },
 ];

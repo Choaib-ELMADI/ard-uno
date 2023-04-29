@@ -30,18 +30,8 @@ const Work = () => {
         <div id='Work' className='app__work'>
             {
                 works.map((work, i) => (
-                (i === 0) ?
                     <div className='app__works-work' key={ i }>
-                        <img src={ isMobile ? images.arduino_solar_light_small : work.img } alt={ `work-${ i }` } />
-                        <div className="app__work-info">
-                            <h1>{ work.title }</h1>
-                            <p>{ work.desc }</p>
-                        </div>
-                        <Link to={ `/projects/${ work.link }`} className="app__work-link"><b>View Project</b></Link>
-                    </div>
-                :
-                    <div className='app__works-work' key={ i }>
-                        <img src={ work.img } alt={ `work-${ i }` } />
+                        <img src={ work.img } alt={ `work-${ i }` } draggable={ false } />
                         <div className="app__work-info">
                             <h1>{ work.title }</h1>
                             <p>{ work.desc }</p>
