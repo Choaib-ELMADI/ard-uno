@@ -1,31 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 import './Work.css';
 import { works } from '../../data';
-import { images } from '../../constants';
 
 
 
 const Work = () => {
-    const [isMobile, setIsMobile] = useState(false);
-
-    useEffect(() => {
-        const mediaQuery = window.matchMedia('(max-width: 600px)');
-
-        setIsMobile(mediaQuery.matches);
-
-        const handleMediaChange = (e) => {
-            setIsMobile(e.matches);
-        }
-
-        mediaQuery.addEventListener('change', handleMediaChange);
-
-        return () => {
-            mediaQuery.removeEventListener('change', handleMediaChange);
-        };
-    }, []);
-
     return (
         <div id='Work' className='app__work'>
             {
