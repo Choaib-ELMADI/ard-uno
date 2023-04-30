@@ -61,13 +61,27 @@ const RadioControl = () => {
           <div className='steps'>
             <h2>So, these are the steps we're going to follow to complete this project :</h2>
             <ol>
-              <h3><li><a href="#project-circuit">Arduino Circuit Diagram</a></li></h3>
-              <h3><li><a href="#soldering-electronics">Soldering & Electronics</a></li></h3>
-              <h3><li><a href="#project-code">Arduino Code</a></li></h3>
+
+              <ol>
+                <h3 className='keyword'>Transmitter:</h3>
+                <h4><li><a href="#project-circuit-transmitter">Arduino Circuit Diagram</a></li></h4>
+                <h4><li><a href="#soldering-electronics-transmitter">Soldering & Electronics</a></li></h4>
+                <h4><li><a href="#project-code-transmitter">Arduino Code</a></li></h4>
+              </ol>
+
+              <br />
+
+              <ol>
+                <h3 className='keyword'>Receiver:</h3>
+                <h4><li><a href="#project-circuit-receiver">Arduino Circuit Diagram</a></li></h4>
+                <h4><li><a href="#soldering-electronics-receiver">Soldering & Electronics</a></li></h4>
+                <h4><li><a href="#project-code-receiver">Arduino Code</a></li></h4>
+              </ol>
+              
             </ol>
           </div>
-
-          <div id="project-circuit" className='circuit'>
+        
+          {/* <div id="project-circuit" className='circuit'>
               <h1>Arduino Solar Panel Circuit Diagram</h1>
               <h3>
                 The next stage is connecting the electronics. 
@@ -139,62 +153,10 @@ const RadioControl = () => {
               >Check my Github account for more</a>.
             </h3>
             <div className='project-code'>
-              <pre>
-              {`
-        /*
 
-                Solar Light Tracker Code
-                by Choaib ELMADI   https://choaib-elmadi.netlify.app
-
-                give it a star :   github.com/Choaib-ELMADI
-        
-        */
-
-        #include <Servo.h>
-        Servo panelServo;
-        int ServoPin = 10;
-
-        int LDRPin_1 = A1;
-        int LDRPin_2 = A2;
-
-        int errorBegin = -10;
-        int errorEnd = 10;
-
-
-        void setup() {
-            Serial.begin(9600);
-
-            panelServo.attach(ServoPin);
-            panelServo.write(100);
-                
-            pinMode(LDRPin_1, INPUT);
-            pinMode(LDRPin_2, INPUT);
-
-            delay(1000);
-        }
-
-        void loop() {
-            int LDRValue_1 = analogRead(LDRPin_1);                                                                                                                     
-            int LDRValue_2 = analogRead(LDRPin_2);
-            int Diff = LDRValue_1 - LDRValue_2;
-            int angle;
-
-            if (Diff <= errorBegin) {
-              angle = map(abs(Diff), abs(errorBegin), 900, 100, 180);
-              panelServo.write(angle);
-            }   else if (Diff >= errorEnd) {
-              angle = map(Diff, errorEnd, 900, 100, 20);
-              panelServo.write(angle);
-            else {
-              angle = 100;
-              panelServo.write(angle);
-            }
-        }
-              `}
-              </pre>
             </div>
           </div>
-          
+  
           <div className='conclusing'>
             <h1>And Now, our project is completed</h1>
             <h3>
@@ -233,7 +195,15 @@ const RadioControl = () => {
                 }
               </div>
             </div>
-          </div>
+          </div> */}
+          <h1 style={{ 
+            margin: '5rem auto',
+            color: 'orangered',
+            background: 'rgba(0, 0, 0, .4)',
+            width: 'max-content',
+            padding: '.5rem .75rem',
+            borderRadius: '12px'
+          }}>VERY SOON</h1>
         </div>
         <div className='app__project-ads'>
           <h1>Ads</h1>

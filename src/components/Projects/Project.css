@@ -78,10 +78,11 @@
 .app__project-body .intro {
     margin-bottom: 2rem;
 }
-.app__project-body .intro .keyword {
+.keyword {
     position: relative;
+    width: max-content;
 }
-.app__project-body .intro .keyword::before {
+.keyword::before {
     position: absolute;
     content: '';
     left: 0;
@@ -90,6 +91,9 @@
     height: 12px;
     background: linear-gradient(to right, rgba(255, 0, 0, .4), rgba(172, 255, 47, .2));
     transform: skew(-50deg);
+}
+.steps .keyword::before {
+    background: linear-gradient(to right, rgba(0, 0, 0, .4), rgba(15, 15, 20, .2));
 }
 
 .app__project-body .steps h2 {
