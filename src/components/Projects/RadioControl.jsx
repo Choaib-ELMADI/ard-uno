@@ -1,30 +1,29 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { BiCoffeeTogo } from 'react-icons/bi';
-import { FaPatreon } from 'react-icons/fa';
-import { AiFillInstagram } from 'react-icons/ai';
+// import { Link } from 'react-router-dom';
+// import { BiCoffeeTogo } from 'react-icons/bi';
+// import { FaPatreon } from 'react-icons/fa';
+// import { AiFillInstagram } from 'react-icons/ai';
 
 import './Project.css';
 import { images } from '../../constants/index';
-import { parts_3d, model_3d } from '../../data';
 
-const support = [
-  {
-    name: "Bye Me Coffe",
-    icon: <BiCoffeeTogo className='icon' fill='white' />,
-    link: "https://www.buymeacoffee.com/choaib.elmadi",
-  },
-  {
-    name: "Patreon",
-    icon: <FaPatreon className='icon' fill='black' />,
-    link: "https://www.patreon.com/user?u=81408575",
-  },
-  {
-    name: "Instagram",
-    icon: <AiFillInstagram className='icon' fill='white' />,
-    link: "https://www.instagram.com/choaib_elmadi",
-  },
-]
+// const support = [
+//   {
+//     name: "Bye Me Coffe",
+//     icon: <BiCoffeeTogo className='icon' fill='white' />,
+//     link: "https://www.buymeacoffee.com/choaib.elmadi",
+//   },
+//   {
+//     name: "Patreon",
+//     icon: <FaPatreon className='icon' fill='black' />,
+//     link: "https://www.patreon.com/user?u=81408575",
+//   },
+//   {
+//     name: "Instagram",
+//     icon: <AiFillInstagram className='icon' fill='white' />,
+//     link: "https://www.instagram.com/choaib_elmadi",
+//   },
+// ]
 
 
 

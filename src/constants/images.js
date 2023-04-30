@@ -13,6 +13,7 @@ import website                   from '../assets/home/services-website.png';
 
 /* Solar Light Detector */
 import solar_panel_project_cover from '../assets/solarPanel/solar_panel_project_cover.png';
+import small_solar_panel_project_cover from '../assets/solarPanel/small_solar_panel_project_cover.png';
 import arduino_solar_light       from '../assets/solarPanel/arduino_solar_light.jpg'; 
 import arduino_solar_light_small from '../assets/solarPanel/arduino_solar_light_small.jpg';
 import solar_panel_1             from '../assets/solarPanel/solar-panel-1.jpg';
@@ -31,6 +32,7 @@ import thangs_logo               from '../assets/home/thangs_logo.png';
 
 /* Radio Control */
 import rc_project_cover          from '../assets/radioControl/rc_project_cover.png';
+import small_rc_project_cover          from '../assets/radioControl/small_rc_project_cover.png';
 import rc_radio_control          from '../assets/radioControl/rc__right-side.jpg';
 import rc_received_data          from '../assets/radioControl/rc__received-data.jpg';
 
@@ -53,6 +55,7 @@ import create_banner             from '../assets/home/create-banner.png';
 import profile                   from '../assets/profile.jpg';
 
 import coming_soon_project_cover from '../assets/home/coming_soon_project_cover.gif';
+import small_coming_soon_project_cover from '../assets/home/small_coming_soon_project_cover.gif';
 
 const images = {
     banner,
@@ -70,6 +73,7 @@ const images = {
 
     /* Soalr Light Tracker */
     solar_panel_project_cover,
+    small_solar_panel_project_cover,
     arduino_solar_light,
     arduino_solar_light_small,
     solar_panel_1,
@@ -88,6 +92,7 @@ const images = {
 
     /* Radio Control */
     rc_project_cover,
+    small_rc_project_cover,
     rc_radio_control,
     rc_received_data,
 
@@ -110,6 +115,7 @@ const images = {
     profile,
 
     coming_soon_project_cover,
+    small_coming_soon_project_cover,
 }
 
 export default images;
