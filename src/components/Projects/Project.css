@@ -336,11 +336,23 @@
         padding: 5rem 1rem 1rem 1rem;
     }
 
-    .app__project-header h1 {
-        font-size: 27px;
-    }
-
     .app__project-body :is(.model-3d, .parts-3d, .parts-assembly) .imgs-container {
         grid-template-columns: repeat(2, 1fr);
     }
+}
+
+h1 {
+    font-size: clamp(20px, 3vw, 26px);
+}
+
+h2 {
+    font-size: clamp(18px, 2vw, 24px);
+}
+
+h3 {
+    font-size: clamp(16px, 1.5vw, 22px);
+}
+
+h4 {
+    font-size: clamp(14px, 1.4vw, 18px);
 }
