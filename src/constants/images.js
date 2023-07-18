@@ -31,10 +31,16 @@ import solar_panel_schematic     from '../assets/solarPanel/solar-panel-schemati
 import thangs_logo               from '../assets/home/thangs_logo.png';
 
 /* Radio Control */
+import rc__1                     from '../assets/radioControl/rc__1.jpg';
+import rc__2                     from '../assets/radioControl/rc__2.jpg';
+import rc__3                     from '../assets/radioControl/rc__3.jpg';
+import rc__4                     from '../assets/radioControl/rc__4.jpg';
 import rc_project_cover          from '../assets/radioControl/rc_project_cover.png';
-import small_rc_project_cover          from '../assets/radioControl/small_rc_project_cover.png';
+import small_rc_project_cover    from '../assets/radioControl/small_rc_project_cover.png';
 import rc_radio_control          from '../assets/radioControl/rc__right-side.jpg';
 import rc_received_data          from '../assets/radioControl/rc__received-data.jpg';
+import rc_transmitter            from '../assets/radioControl/rc-transmitter.png';
+import rc_receiver               from '../assets/radioControl/rc-receiver.png';
 
 import arduino_drone             from '../assets/drone/arduino-drone.jpg';
 import arduino_arm               from '../assets/arm/arduino-arm.jpg';
@@ -91,10 +97,16 @@ const images = {
     solar_panel_schematic,
 
     /* Radio Control */
+    rc__1,
+    rc__2,
+    rc__3,
+    rc__4,
     rc_project_cover,
     small_rc_project_cover,
     rc_radio_control,
     rc_received_data,
+    rc_receiver,
+    rc_transmitter,
 
     arduino_drone,
     arduino_arm,

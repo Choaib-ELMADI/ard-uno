@@ -80,67 +80,42 @@ const RadioControl = () => {
             </ol>
           </div>
         
-          {/* <div id="project-circuit" className='circuit'>
-              <h1>Arduino Solar Panel Circuit Diagram</h1>
+          <div id="project-circuit-transmitter" className='circuit'>
+              <h1>Transmitter Circuit Diagram</h1>
               <h3>
-                The next stage is connecting the electronics. 
-                The circuit diagram of this project is actually quite simple. 
-                We just need an Arduino board and a Servo motor to move the panel. 
-                And two Photoresistor.
+                First of all, we need to create the electronic circuit for our transmitter.<br />
+                It consists of an <span className='keyword'>Arduino Nano</span>, 2 joysticks, a NRF24L01 module and a 100uF capacitor.
               </h3>
               <div className='project-circuit'>
-                <img src={ images.solar_panel_circuit } alt="arduino circuit" />
+                <img src={ images.rc_transmitter } alt="arduino circuit" />
               </div>
-              <h3>
-                And because the servo motor needs 5V, 
-                and the arduino can't handle this we must 
-                provide an external power source. 
-                In our case, it's OK because we only have one servo. <br />
-                Once we connected eveything, we can move on to programming the arduino.
-              </h3>
           </div>
 
+          
           <div id="soldering-electronics" className='parts-assembly'>
-            <h1>Assembling the Solar Light Tracker</h1>
+            <h1>Assembling The Transmitter</h1>
             <h3>
-              Now, we are ready to assemble the solar panel. 
-              I started with assembling the parts of the base
-              using some hot glue. Then I attached the 
-              main servo motor using the screws included in 
-              its package and some hot glue.
+              Based on the diagram above, we can now assemble and solder all the different pieces of the radio transmitter.
             </h3>
             <div className='imgs-container'>
               <div>
-                <img src={ images.solar_panel_holders_done } alt="solar panel assembling" />
+                <img src={ images.rc__1 } alt="radio transmitter assembling" />
               </div>
               <div>
-                <img src={ images.solar_panel_servo_mounted } alt="solar panel assembling" />
+                <img src={ images.rc__3 } alt="radio transmitter assembling" />
+              </div>
+              <div>
+                <img src={ images.rc__4 } alt="radio transmitter assembling" />
               </div>
             </div>
             <h3> 
-              Then on the output shaft of the servo I secured the ldrs holder.
-            </h3>
-            <div className='imgs-container'>
-              <div>
-                <img src={ images.solar_panel_ldrs } alt="solar panel assembling" />
-              </div>
-              <div>
-                <img src={ images.solar_panel_1 } alt="solar panel assembling" />
-              </div>
-            </div>
-            <h3> 
-              And Now, our solar light detector is fully assembled and ready.
+              And Now, our radio transmitter is ready and we can repeat the same process with the receiver.
             </h3>
           </div>
 
           <div id="project-code" className='code'>
             <h1>Arduino Code</h1>
             <h3>
-              The main code is quite simple. First, we need 
-              to include the Servo library, create our LDR 
-              pins and the interval of error. We attach the servo 
-              to its pin and start reading the values of the two LDRs. 
-              Based on the difference between these two, we tell the servo where to rotate. <br /> <br />
               <a  
                 href='https://github.com/Choaib-ELMADI/Arduino' 
                 target='_blank' 
@@ -152,10 +127,64 @@ const RadioControl = () => {
               >Check my Github account for more</a>.
             </h3>
             <div className='project-code'>
+            <pre>
+              {`
+        /*
 
+                Radio Transmitter Code
+                by Choaib ELMADI   https://elmadichoaib.vercel.app
+
+                give it a star :   github.com/Choaib-ELMADI
+        
+        */
+
+        #include <SPI.h>
+        #include "nRF24L01.h"
+        #include "RF24.h"
+        
+        RF24 radio(7, 8);
+        const byte address[6] = "ABCDE";
+        
+        typedef struct {
+          int xL;
+          int yL;
+          int xR;
+          int yR;
+        } DATA;
+        DATA data;
+        
+        int xLeft  = A0;
+        int yLeft  = A1;
+        int xRight = A2;
+        int yRight = A3;
+        
+        void setup() {  
+          radio.begin();
+          radio.openWritingPipe(address);
+          radio.setPALevel(RF24_PA_MIN);
+          radio.stopListening();
+        }
+        
+        void loop() {
+          int xLeftValue  = analogRead(xLeft);
+          int yLeftValue  = analogRead(yLeft);
+          int xRightValue = analogRead(xRight);
+          int yRightValue = analogRead(yRight);
+        
+          data.xL = xLeftValue;
+          data.yL = yLeftValue;
+          data.xR = xRightValue;
+          data.yR = yRightValue;
+        
+          radio.write(&data, sizeof(DATA));
+        }
+        
+        `}
+              </pre>
             </div>
           </div>
   
+          {/*
           <div className='conclusing'>
             <h1>And Now, our project is completed</h1>
             <h3>
@@ -195,14 +224,6 @@ const RadioControl = () => {
               </div>
             </div>
           </div> */}
-          <h1 style={{ 
-            margin: '5rem auto',
-            color: 'orangered',
-            background: 'rgba(0, 0, 0, .4)',
-            width: 'max-content',
-            padding: '.5rem .75rem',
-            borderRadius: '12px'
-          }}>VERY SOON</h1>
         </div>
         <div className='app__project-ads'>
           <h1>Ads</h1>
