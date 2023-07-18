@@ -3,6 +3,7 @@
 <h3>Reasons to develop this website</h3>
 <ul>
     <li>Improve my knowledge in React</li>
+    <li>Improve my knowledge in Electronics & Arduino</li>
     <li>Showcase my skills</li>
     <li>Provide some help to others</li>
 </ul>
