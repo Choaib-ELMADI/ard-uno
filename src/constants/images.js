@@ -35,6 +35,11 @@ import rc__1                     from '../assets/radioControl/rc__1.jpg';
 import rc__2                     from '../assets/radioControl/rc__2.jpg';
 import rc__3                     from '../assets/radioControl/rc__3.jpg';
 import rc__4                     from '../assets/radioControl/rc__4.jpg';
+import rc__5                     from '../assets/radioControl/rc__5.jpg';
+import rc__6                     from '../assets/radioControl/rc__6.jpg';
+import rc__12                    from '../assets/radioControl/rc__12.jpg';
+import rc__13                    from '../assets/radioControl/rc__13.jpg';
+import rc__final                 from '../assets/radioControl/rc__final.jpg';
 import rc_project_cover          from '../assets/radioControl/rc_project_cover.png';
 import small_rc_project_cover    from '../assets/radioControl/small_rc_project_cover.png';
 import rc_radio_control          from '../assets/radioControl/rc__right-side.jpg';
@@ -101,6 +106,11 @@ const images = {
     rc__2,
     rc__3,
     rc__4,
+    rc__5,
+    rc__6,
+    rc__12,
+    rc__13,
+    rc__final,
     rc_project_cover,
     small_rc_project_cover,
     rc_radio_control,

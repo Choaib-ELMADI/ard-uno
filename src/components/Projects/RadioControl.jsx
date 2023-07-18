@@ -1,29 +1,29 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
-// import { BiCoffeeTogo } from 'react-icons/bi';
-// import { FaPatreon } from 'react-icons/fa';
-// import { AiFillInstagram } from 'react-icons/ai';
+import { Link } from 'react-router-dom';
+import { BiCoffeeTogo } from 'react-icons/bi';
+import { FaPatreon } from 'react-icons/fa';
+import { AiFillInstagram } from 'react-icons/ai';
 
 import './Project.css';
 import { images } from '../../constants/index';
 
-// const support = [
-//   {
-//     name: "Bye Me Coffe",
-//     icon: <BiCoffeeTogo className='icon' fill='white' />,
-//     link: "https://www.buymeacoffee.com/choaib.elmadi",
-//   },
-//   {
-//     name: "Patreon",
-//     icon: <FaPatreon className='icon' fill='black' />,
-//     link: "https://www.patreon.com/user?u=81408575",
-//   },
-//   {
-//     name: "Instagram",
-//     icon: <AiFillInstagram className='icon' fill='white' />,
-//     link: "https://www.instagram.com/choaib_elmadi",
-//   },
-// ]
+const support = [
+  {
+    name: "Bye Me Coffe",
+    icon: <BiCoffeeTogo className='icon' fill='white' />,
+    link: "https://www.buymeacoffee.com/choaib.elmadi",
+  },
+  {
+    name: "Patreon",
+    icon: <FaPatreon className='icon' fill='black' />,
+    link: "https://www.patreon.com/user?u=81408575",
+  },
+  {
+    name: "Instagram",
+    icon: <AiFillInstagram className='icon' fill='white' />,
+    link: "https://www.instagram.com/choaib_elmadi",
+  },
+]
 
 
 
@@ -90,9 +90,7 @@ const RadioControl = () => {
                 <img src={ images.rc_transmitter } alt="arduino circuit" />
               </div>
           </div>
-
-          
-          <div id="soldering-electronics" className='parts-assembly'>
+          <div id="soldering-electronics-transmitter" className='parts-assembly'>
             <h1>Assembling The Transmitter</h1>
             <h3>
               Based on the diagram above, we can now assemble and solder all the different pieces of the radio transmitter.
@@ -112,10 +110,10 @@ const RadioControl = () => {
               And Now, our radio transmitter is ready and we can repeat the same process with the receiver.
             </h3>
           </div>
-
-          <div id="project-code" className='code'>
+          <div id="project-code-transmitter" className='code'>
             <h1>Arduino Code</h1>
             <h3>
+              <strong>NB: </strong> The address for both the receiver and the transmitter must be the same.<br />
               <a  
                 href='https://github.com/Choaib-ELMADI/Arduino' 
                 target='_blank' 
@@ -183,20 +181,126 @@ const RadioControl = () => {
               </pre>
             </div>
           </div>
-  
-          {/*
+
+          <div id="project-circuit-receiver" className='circuit'>
+              <h1>Receiver Circuit Diagram</h1>
+              <h3>
+                Just like the transmitter, we need to create the electronic circuit for our receiver.<br />
+                It consists of an <span className='keyword'>Arduino Nano</span>, a NRF24L01 module and a 100uF capacitor.
+              </h3>
+              <div className='project-circuit'>
+                <img src={ images.rc_receiver } alt="arduino circuit" />
+              </div>
+          </div>
+          <div id="soldering-electronics-receiver" className='parts-assembly'>
+            <h1>Assembling The Receiver</h1>
+            <h3>
+              Based on the diagram above, we can now assemble and solder all the different pieces of the radio receiver.
+            </h3>
+            <div className='imgs-container'>
+              <div>
+                <img src={ images.rc__5 } alt="radio receiver assembling" />
+              </div>
+              <div>
+                <img src={ images.rc__6 } alt="radio receiver assembling" />
+              </div>
+              <div>
+                <img src={ images.rc__12 } alt="radio receiver assembling" />
+              </div>
+            </div>
+            <h3> 
+              And Now, our radio receiver is ready and we can pair with the transmitter to work together.
+            </h3>
+          </div>
+          <div id="project-code-receiver" className='code'>
+            <h1>Arduino Code</h1>
+            <h3>
+              <strong>NB: </strong> The address for both the receiver and the transmitter must be the same.<br />
+              <a  
+                href='https://github.com/Choaib-ELMADI/Arduino' 
+                target='_blank' 
+                rel='noreferrer'
+                style={{
+                  textDecoration: 'none',
+                  color: '#6b6767',
+                }}
+              >Check my Github account for more</a>.
+            </h3>
+            <div className='project-code'>
+            <pre>
+              {`
+        /*
+
+                Radio Receiver Code
+                by Choaib ELMADI   https://elmadichoaib.vercel.app
+
+                give it a star :   github.com/Choaib-ELMADI
+        
+        */
+
+        #include <SPI.h>
+        #include "nRF24L01.h"
+        #include "RF24.h"
+        
+        #include <Servo.h>
+        
+        RF24 radio(7, 8);
+        const byte address[6] = "ABCDE";
+        
+        Servo Servo01;
+        Servo Servo02;
+        int Servo01Pin = 2;
+        int Servo02Pin = 3;
+                
+        typedef struct {
+          int xL;
+          int yL;
+          int xR;
+          int yR;
+        } DATA;
+        DATA data;
+        
+        void setup() {
+          radio.begin();
+          radio.openReadingPipe(0, address);
+          radio.setPALevel(RF24_PA_MIN);
+          radio.startListening();
+        
+          Servo01.attach(Servo01Pin);
+          Servo02.attach(Servo02Pin);
+          Servo01.write(0);
+          Servo02.write(0);
+        }
+                
+        void loop() {
+            if (radio.available()) {
+              radio.read(&data, sizeof(DATA));
+        
+              int angle01 = map(data.xL, 0, 1023, 0, 179);
+              int angle02 = map(data.yL, 0, 1023, 0, 179);
+              Servo01.write(angle01);
+              Servo02.write(angle02);
+            }
+        }
+        
+        `}
+              </pre>
+            </div>
+          </div>
+
           <div className='conclusing'>
             <h1>And Now, our project is completed</h1>
             <h3>
               I hope you liked this project and learned something new. 
               Feel free to ask any question and check my Arduino Projects Collection.
             </h3>
-            <img src={ images.arduino_solar_light } alt="solar light tracker" />
+            <h3>In order to test our DIY RC, I use it to control two servo motors. We will use it furthermore in our next projects.</h3>
+            <img src={ images.rc__final } alt="Radio Control" />
             <div className='prev-next'>
               <h3>
-                <Link className='project-link' to="/projects/selling-machine">
+                <Link className='project-link' to="/projects/solar-panel">
                   <span>Previous Project</span>
-                  <span>Selling Machine</span>
+                  <span>Solar Panel</span>
                 </Link>
               </h3>
               <h3>
@@ -223,7 +327,7 @@ const RadioControl = () => {
                 }
               </div>
             </div>
-          </div> */}
+          </div>
         </div>
         <div className='app__project-ads'>
           <h1>Ads</h1>
