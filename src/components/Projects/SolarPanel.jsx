@@ -35,7 +35,7 @@ const SolarPanel = () => {
           <h1>DIY Arduino Solar Light Tracker</h1>
           <div className='app__project-header-creator'>
             <img src={ images.profile } alt="Choaib ELMADI" />
-            <h4>By <a href="https://choaib-elmadi.netlify.app/" target="_blank" rel="noreferrer">Choaib ELMADI</a></h4>
+            <h4>By <a href="https://elmadichoaib.vercel.app" target="_blank" rel="noreferrer">Choaib ELMADI</a></h4>
           </div>
           <div className='app__project-banner'>
             <img src={ images.arduino_solar_light } alt="arduino solar panel" />

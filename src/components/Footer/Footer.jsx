@@ -112,7 +112,7 @@ const Footer = () => {
       <div className="app__footer-rights">
           <div className='line' />
           <div className="rights">
-            <p>©2023 <a href='https://choaib-elmadi.netlify.app/' target='_blank' rel='noreferrer'>Choaib-ELMADI</a>. All right reserved.</p>
+            <p>©2023 <a href='https://elmadichoaib.vercel.app' target='_blank' rel='noreferrer'>Choaib-ELMADI</a>. All right reserved.</p>
             <Link className='go' to="/privacy">Privacy Policy</Link>
             <Link className='go' to="/cookie">Cookie Policy</Link>
           </div>
