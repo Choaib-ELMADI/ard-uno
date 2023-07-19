@@ -217,12 +217,12 @@
     width: 100%;
 }
 
-.app__project-body .parts-assembly .imgs-container {
+.app__project-body :is(.parts-assembly, .conclusing) .imgs-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem;
 }
-.app__project-body .parts-assembly .imgs-container img {
+.app__project-body :is(.parts-assembly, .conclusing) .imgs-container img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -336,7 +336,7 @@
         padding: 5rem 1rem 1rem 1rem;
     }
 
-    .app__project-body :is(.model-3d, .parts-3d, .parts-assembly) .imgs-container {
+    .app__project-body :is(.model-3d, .parts-3d, .parts-assembly, .conclusing) .imgs-container {
         grid-template-columns: repeat(2, 1fr);
     }
 }

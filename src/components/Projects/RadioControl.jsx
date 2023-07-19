@@ -296,6 +296,17 @@ const RadioControl = () => {
             </h3>
             <h3>In order to test our DIY RC, I use it to control two servo motors. We will use it furthermore in our next projects.</h3>
             <img src={ images.rc__final } alt="Radio Control" />
+            <div className='imgs-container' style={{ marginTop: '1rem' }}>
+              <div>
+                <img src={ images.rc__final_1 } alt="radio control" />
+              </div>
+              <div>
+                <img src={ images.rc__final_2 } alt="radio control" />
+              </div>
+              <div>
+                <img src={ images.rc__final_3 } alt="radio control" />
+              </div>
+              </div>
             <div className='prev-next'>
               <h3>
                 <Link className='project-link' to="/projects/solar-panel">
