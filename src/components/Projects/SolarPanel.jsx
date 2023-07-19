@@ -267,9 +267,9 @@ const SolarPanel = () => {
                 </Link>
               </h3>
               <h3>
-                <Link className='project-link' to="/projects/drone">
+                <Link className='project-link' to="/projects/radio-control">
                   <span>Next Project</span>
-                  <span>DIY Drone</span>
+                  <span>Radio Control</span>
                 </Link>
               </h3>
             </div>
