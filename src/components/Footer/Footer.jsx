@@ -24,11 +24,11 @@ const Footer = () => {
       'service_rbyqrrj', 
       'template_z4t83ye', 
       {
-        from_name: email,
-        to_name: 'User',
-        from_email: email,
-        to_email: 'choaibelmadi.js@gmail.com',
-        message: 'Thanks for subscribing to tha Ard-Uno newsletter. We hope you get the best experience',
+        from_name: 'Choaib ELMADI',
+        to_name: email,
+        from_email: 'choaibelmadi.js@gmail.com',
+        to_email: email,
+        message: 'Thanks for subscribing to the Ard-Uno newsletter. We hope you get the best experience',
       }, 
       'BzsAxBDR2VcTFgclc'
     )
