@@ -12,7 +12,7 @@
 }
 
 .app__about-left p {
-    column-count: 2;
+    /* column-count: 2; */
     margin-bottom: 1rem;
     width: 100%;
     max-width: 800px;
@@ -32,7 +32,7 @@
     border-bottom-right-radius: 8px;
 }
 
-@media screen and (width <= 856px) {
+@media screen and (width <=856px) {
     .app__about {
         flex-direction: column;
     }
@@ -42,7 +42,7 @@
     }
 }
 
-@media screen and (width <= 600px) {
+@media screen and (width <=600px) {
     .app__about {
         padding: 4rem 1rem 0 1rem;
     }
