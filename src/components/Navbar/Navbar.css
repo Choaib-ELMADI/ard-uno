@@ -6,7 +6,7 @@
     width: 100%;
     padding: .75rem 2rem;
     transition: background .2s;
-    z-index: 999;
+    z-index: 9999;
     user-select: none;
 }
 
@@ -215,8 +215,8 @@
         gap: 2rem;
         align-items: center;
         background: rgba(128, 128, 128, 0.7);
-        padding: 6px 12px 2px 12px;
-        border-radius: 8px;
+        padding: 8px 8px 2px 8px;
+        border-radius: 2px;
         box-shadow: 0 0 8px rgba(0, 0, 0, .2);
     }
 }

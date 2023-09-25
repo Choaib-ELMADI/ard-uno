@@ -163,6 +163,7 @@ export const testimonials = [
 ];
 
 export const routes = [
+	//! DONE PROJECTS !//
 	{
 		path: "/projects/solar-panel",
 		element: <SolarPanel />,
@@ -172,6 +173,7 @@ export const routes = [
 		element: <RadioControl />,
 	},
 
+	// TODO PROJECTS //
 	{
 		path: "/projects/diy-car",
 		element: <DiyCar />,
