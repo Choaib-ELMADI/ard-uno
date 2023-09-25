@@ -33,11 +33,11 @@
     color: var(--white);
 }
 
-.app__navbar.active .toggle-navbar > * {
+.app__navbar.active .toggle-navbar>* {
     fill: var(--white);
 }
 
-.app__navbar .toggle-navbar > *:hover {
+.app__navbar .toggle-navbar>*:hover {
     transition: .2s;
     fill: var(--our__color);
 }
@@ -98,13 +98,15 @@
     color: var(--our__color);
 }
 
-.projects-links:hover {
+.projects-links.active>h4,
+.projects-links>h4:hover {
     color: var(--our__color);
+    transition: .3s;
 }
 
 .projects-links.active .triangle-icon {
     transform: rotateZ(180deg);
-} 
+}
 
 .projects-links-container {
     position: absolute;
@@ -122,7 +124,7 @@
     z-index: 10;
 }
 
-.projects-links.active  .projects-links-container {
+.projects-links.active .projects-links-container {
     width: max-content;
     opacity: 1;
     visibility: visible;
@@ -137,11 +139,16 @@
     transition: .3s;
 }
 
+.projects-links-container .project-link h4 {
+    font-size: 16px;
+}
+
 .projects-links-container .project-link:hover {
     color: var(--our__color);
 }
 
 @media screen and (width > 900px) {
+
     .toggle-navbar,
     .app__navbar-social {
         display: none;
@@ -156,7 +163,7 @@
     }
 }
 
-@media screen and (width <= 900px) {
+@media screen and (width <=900px) {
     .app__navbar-btn {
         margin-left: auto;
         margin-right: 1rem;
@@ -185,7 +192,7 @@
         background: rgba(0, 0, 0, 0.5);
         animation: sliding .5s linear alternate;
     }
-    
+
     .app__navbar-container .app__navbar-main {
         background: rgb(118, 118, 118);
         width: 100%;
@@ -214,7 +221,7 @@
     }
 }
 
-@media screen and (width <= 450px) {
+@media screen and (width <=450px) {
     .app__navbar {
         padding: .5rem 1rem;
     }
