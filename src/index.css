@@ -1,7 +1,7 @@
 :root {
   /* Colors */
-  --black:      rgb(15, 18, 22);
-  --white:      #e4e4e4;
+  --black: rgb(15, 18, 22);
+  --white: #e4e4e4;
   --our__color: orangered;
 }
 
@@ -17,7 +17,12 @@
   0% {
     transform: translateX(-100%);
   }
+
   100% {
     transform: translateX(0);
   }
+}
+
+*::-webkit-scrollbar {
+  display: none;
 }
