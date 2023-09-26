@@ -18,6 +18,7 @@ const Navbar = () => {
 	const [open, setOpen] = useState(false);
 	const [back, setBack] = useState(false);
 	const [vueProjects, setVueProjects] = useState(false);
+	const [isMobile, setIsMobile] = useState(false);
 
 	const scrolling = () => {
 		if (window.scrollY >= 30) {
@@ -32,6 +33,22 @@ const Navbar = () => {
 		window.addEventListener("scroll", scrolling);
 	});
 
+	useEffect(() => {
+		const mediaQuery = window.matchMedia("(max-width: 900px)");
+
+		setIsMobile(mediaQuery.matches);
+
+		const handleMediaChange = (e) => {
+			setIsMobile(e.matches);
+		};
+
+		mediaQuery.addEventListener("change", handleMediaChange);
+
+		return () => {
+			mediaQuery.removeEventListener("change", handleMediaChange);
+		};
+	}, []);
+
 	window.onscroll = { scrolling };
 
 	return (
@@ -40,7 +57,7 @@ const Navbar = () => {
 				<a
 					href="/"
 					className="app__logo"
-					style={{ display: open ? "none" : "block" }}
+					style={{ display: isMobile && open ? "none" : "block" }}
 				>
 					<h1>Ard-uno</h1>
 				</a>
